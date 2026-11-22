@@ -1,0 +1,19 @@
+Solidarität für ME/CFS – Website-Vorschau, Entwurf A · Ruhig & klar
+
+So öffnest du die Vorschau:
+  ZIP entpacken und index.html im Browser öffnen (Doppelklick).
+  Alle Seiten funktionieren offline; nur die Schriften kommen von Google Fonts
+  und brauchen eine Internetverbindung.
+
+Enthaltene Seiten:
+  index.html        Startseite
+  programm.html     Programm (Ablauf 2026, Programm 2027 folgt)
+  betroffene.html   Berichte von Betroffenen + Video
+  impressum.html    Impressum (Text von der bisherigen Seite)
+  datenschutz.html  Datenschutzerklärung (Text von der bisherigen Seite)
+
+Hinweise:
+  - Inhalte, Logos und Bilder stammen aus dem Repository solidaritaetfuermecfs.com.
+  - Das Video ist für die Vorschau verkleinert (540×960, ca. 3,5 MB statt 54 MB).
+  - Uhrzeit und Programm für den 22. Mai 2027 sind noch offen und als „folgt“ markiert.
+  - Die Zahlen im Abschnitt „Was ist ME/CFS?“ bitte vor Veröffentlichung fachlich gegenlesen.
