@@ -407,6 +407,32 @@ a:hover { color: var(--accent-dark); }
   line-height: 1.6;
   color: var(--muted);
 }
+.hero__copy { margin: 0 0 24px; }
+.hero .pills { margin: 0 0 32px; }
+.hero .pill { background: #FFFFFF; }
+.hero__notice,
+.hero__notice:hover {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 28px;
+  padding: 6px 16px 6px 6px;
+  border-radius: 999px;
+  background: #FFFFFF;
+  color: var(--ink);
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.hero__notice-label {
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #FFFFFF;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
 .hero__media { flex: 0 1 400px; min-width: 0; margin: 0 auto; }
 .hero__media img {
   display: block;
@@ -415,6 +441,9 @@ a:hover { color: var(--accent-dark); }
   border-radius: 18px;
   box-shadow: var(--shadow-hero);
 }
+
+.hero__media--logo { flex-basis: 360px; }
+.hero__media--logo img { border-radius: 0; box-shadow: none; }
 
 /* Was ist ME/CFS? */
 .intro__inner { display: flex; flex-wrap: wrap; gap: 64px; }
@@ -600,6 +629,14 @@ a:hover { color: var(--accent-dark); }
 .video__frame video { width: 100%; height: 100%; object-fit: cover; }
 .video figcaption { margin-top: 12px; font-size: 16px; color: var(--muted); }
 
+/* Erklärvideos */
+.explainers { margin-top: 72px; }
+.explainers .group-title { margin-bottom: 8px; }
+.explainers__intro { max-width: 640px; margin: 0 0 24px; color: var(--muted); }
+.explainers__list { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 28px; }
+.explainers__more { margin-top: 32px; }
+.video__title { display: block; font-size: 17px; color: var(--ink); }
+
 /* Presse */
 .press { display: flex; flex-wrap: wrap; gap: 20px; }
 .press-card,
@@ -638,13 +675,7 @@ a:hover { color: var(--accent-dark); }
 }
 .press-card__cta { margin-top: auto; font-weight: 700; color: var(--accent); }
 
-/* Verein */
-.about { display: flex; flex-wrap: wrap; gap: 40px 64px; margin-bottom: 56px; }
-.about__title { flex: 1 1 360px; min-width: 0; }
-.about__text { flex: 999 1 520px; min-width: 0; }
-.about__lead { margin: 0 0 18px; font-size: 20px; }
-.about__text p:not(.about__lead) { margin: 0 0 24px; }
-
+/* Verein: Team */
 .team { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 40px; }
 .team--compact { max-width: 760px; margin-bottom: 0; }
 .person {
@@ -990,6 +1021,24 @@ a:hover { color: var(--accent-dark); }
   .hero .button-row { flex-direction: column; gap: 12px; }
   .hero .btn { justify-content: center; }
   .hero__media { max-width: 340px; }
+  .hero__media--logo { max-width: 220px; }
+  .hero__notice { margin-top: 24px; font-size: 15px; }
+  .explainers { margin-top: 48px; }
+  /* Videos auf dem Handy seitlich wischen */
+  .videos__list,
+  .explainers__list {
+    flex-wrap: nowrap;
+    gap: 14px;
+    margin: 0 -20px;
+    padding: 0 20px 8px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0 20px;
+  }
+  .videos__list .video,
+  .explainers .video { flex: 0 0 72%; max-width: none; scroll-snap-align: start; }
+  .videos__list { flex-basis: auto; width: calc(100% + 40px); }
+  .explainers__more { justify-content: center; width: 100%; margin-top: 24px; font-size: 16px; }
 
   .intro__inner { gap: 40px; }
   .intro__lead { font-size: 19px; }
@@ -1015,8 +1064,6 @@ a:hover { color: var(--accent-dark); }
   .videos__inner { gap: 28px; }
   .press-card { padding: 22px; }
 
-  .about { gap: 24px; margin-bottom: 40px; }
-  .about__lead { font-size: 19px; }
   .team { gap: 12px; }
   .person { flex-direction: row; align-items: center; padding: 16px 18px; }
   .person .avatar { width: 56px; height: 56px; }
