@@ -1,564 +1,710 @@
 <!doctype html>
 <html lang="de">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Solidarität für ME/CFS – Benefizveranstaltung am Grazer Hauptplatz</title>
-<meta name="description" content="Solidarität für ME/CFS – öffentliche Benefizveranstaltung am Grazer Hauptplatz für Sichtbarkeit, Aufklärung und Spenden für die ME/CFS-Forschung.">
-<meta property="og:title" content="Solidarität für ME/CFS – Benefizveranstaltung am Grazer Hauptplatz">
-<meta property="og:image" content="assets/logo.png">
-<meta name="theme-color" content="#1C4BA0">
-<link rel="icon" href="assets/favicon.ico">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&amp;family=Montserrat:wght@600;700;800&amp;display=swap">
-<style>
-body{margin:0}
-a{color:#1C4BA0}a:hover{color:#123577}
-</style>
-<style>
-html{-webkit-text-size-adjust:100%}
-*,*::before,*::after{box-sizing:border-box}
-img,video{max-width:100%}
-.skip{position:absolute;left:-9999px;top:0;z-index:10;padding:12px 18px;background:#14213D;color:#fff;font-weight:700;border-radius:0 0 8px 0}
-.skip:focus{left:0}
-:focus-visible{outline:3px solid #F2A93B;outline-offset:3px}
-@media (max-width:720px){
-  nav[aria-label="Hauptnavigation"]{gap:4px 16px !important;font-size:15px !important}
-  header > div{padding-left:20px !important;padding-right:20px !important}
-  [style*="padding: 112px 32px"],[style*="padding: 120px 40px"],[style*="padding: 104px 32px"]{padding-top:64px !important;padding-bottom:64px !important}
-  section > div,footer > div,main{padding-left:20px !important;padding-right:20px !important}
-}
-.page{background:var(--p-bg);color:var(--p-ink);padding:88px 24px 120px}
-.page-inner{max-width:860px;margin:0 auto}
-.page a{color:var(--p-accent)}
-.page .eyebrow{font-size:15px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--p-accent);margin:0 0 16px}
-.page h1{font-size:clamp(40px,6vw,64px);line-height:1.1;margin:0 0 24px}
-.page .lead{font-size:21px;line-height:1.6;color:var(--p-muted);margin:0 0 56px;max-width:700px}
-.page h2{font-size:clamp(26px,3vw,34px);line-height:1.2;margin:64px 0 20px}
-.page h3{font-size:21px;margin:32px 0 8px}
-.page p,.page li{line-height:1.65}
-.page .muted{color:var(--p-muted)}
-.page .small{font-size:15px}
-.timeline{list-style:none;margin:0;padding:0;border-top:1px solid var(--p-line)}
-.timeline li{display:flex;flex-wrap:wrap;gap:4px 32px;padding:20px 0;border-bottom:1px solid var(--p-line)}
-.timeline .time{flex:0 0 150px;font-weight:700;color:var(--p-accent)}
-.timeline li>div{flex:1 1 340px;min-width:0}
-.timeline h3{margin:0 0 4px;font-size:20px}
-.timeline p{margin:0;color:var(--p-muted)}
-.story{padding:clamp(24px,4vw,44px);border-radius:var(--p-radius);background:var(--p-card);margin:0 0 28px}
-.story h2{margin:0 0 16px}
-.story blockquote{font-size:26px;line-height:1.4;margin:0 0 24px}
-.downloads{display:flex;flex-wrap:wrap;gap:24px}
-.downloads a{flex:1 1 280px;display:flex;flex-direction:column;gap:10px;text-decoration:none;font-weight:700}
-.downloads img{width:100%;height:auto;border-radius:var(--p-radius);border:1px solid var(--p-line);background:#fff}
-.legal{max-width:760px}
-.legal h2{font-size:22px !important;margin:40px 0 10px !important;font-family:inherit !important;text-transform:none !important;font-weight:700 !important;letter-spacing:0 !important}
-.legal p,.legal li{font-size:17px;overflow-wrap:anywhere}
-.video-wrap{max-width:320px}
-video{background:#000;display:block}
-.page{--p-bg:#FFFFFF;--p-ink:#0F2552;--p-muted:#3D4F73;--p-accent:#1C4BA0;--p-line:#D9E3F1;--p-card:#F4F7FC;--p-radius:22px;}.page h1,.page h2,.story h2{font-family:'Montserrat',sans-serif;font-weight:800;letter-spacing:-0.01em}@media (max-width:720px){nav[aria-label="Hauptnavigation"] a:not(:last-child){display:none}header a span{font-size:15px !important}}</style>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solidarität für ME/CFS – Verein aus Graz für Menschen mit ME/CFS</title>
+  <meta name="description" content="Wir sind Betroffene und Angehörige aus Graz: Wir machen ME/CFS sichtbar, bieten eine Selbsthilfegruppe und sammeln bei Benefizveranstaltungen Spenden für die Forschung.">
+  <meta name="theme-color" content="#1C4BA0">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Solidarität für ME/CFS – Verein aus Graz">
+  <meta property="og:description" content="Betroffene und Angehörige aus Graz – für Sichtbarkeit, Selbsthilfe und Spenden für die ME/CFS-Forschung.">
+  <meta property="og:image" content="https://solidaritaetfuermecfs.com/assets/img/logo.png">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preload" href="assets/fonts/montserrat-600-800.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/fonts/atkinson-400.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="assets/js/main.js" defer></script>
 </head>
 <body>
-<a class="skip" href="#inhalt">Zum Inhalt springen</a>
-<div style="font-family: 'Atkinson Hyperlegible', system-ui, sans-serif; color: #0F2552; background: #FFFFFF; font-size: 18px; line-height: 1.6">
-<header style="background: #FFFFFF; border-bottom: 1px solid #D9E3F1">
-<div style="max-width: 1200px; margin: 0 auto; padding: 18px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
-<a href="#top" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #0F2552">
-<img src="assets/ribbon.png" alt="" style="height: 44px; width: auto; display: block">
-<span style="font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 18px; letter-spacing: 0.01em; text-transform: uppercase">Solidarität für ME/CFS</span>
-</a>
-<nav aria-label="Hauptnavigation" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 26px; font-size: 17px">
-<a href="#aktionen" style="color: #0F2552; text-decoration: none">Aktionen</a>
-<a href="#mecfs" style="color: #0F2552; text-decoration: none">ME/CFS</a>
-<a href="#verein" style="color: #0F2552; text-decoration: none">Verein</a>
-<a href="#projekte" style="color: #0F2552; text-decoration: none">Projekte</a>
-<a href="#mitwirken" style="color: #0F2552; text-decoration: none">Mitwirken</a>
-<a href="https://www.weandmecfs.org/donate-and-help/#donation-account-information" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 22px; border-radius: 999px; background: #1C4BA0; color: #FFFFFF; text-decoration: none; font-weight: 700">Spenden</a>
-</nav>
-</div>
-</header>
-<div id="inhalt"></div>
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
 
+  <!-- Icons: einmal definiert, unten per <use href="#icon-…"> eingesetzt -->
+  <svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="icon-calendar" viewBox="0 0 24 24" fill="none"><rect x="3.5" y="5" width="17" height="15" rx="2" stroke="currentColor" stroke-width="2"/><path d="M3.5 10h17M8 3v4M16 3v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="2"/><path d="M12 7.5V12l3 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24" fill="none"><path d="M12 21s-6.5-5.8-6.5-11a6.5 6.5 0 0 1 13 0c0 5.2-6.5 11-6.5 11z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.4" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24" fill="none"><rect x="3" y="5.5" width="18" height="13" rx="2" stroke="currentColor" stroke-width="2"/><path d="m3.5 7 8.5 6 8.5-6" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-arrow" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-instagram" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></symbol>
+    <symbol id="icon-tv" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="12" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="icon-mic" viewBox="0 0 24 24" fill="none"><rect x="9" y="3" width="6" height="11" rx="3" stroke="currentColor" stroke-width="2"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="icon-article" viewBox="0 0 24 24" fill="none"><path d="M6 3h9l4 4v14H6z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 11h7M9 15h7M9 7h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="icon-photo" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="10" r="2" stroke="currentColor" stroke-width="2"/><path d="m4 18 5-5 4 4 3-3 4 4" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-person" viewBox="0 0 80 80" fill="none"><circle cx="40" cy="31" r="12.5" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><path d="M16 80 Q16 52 40 52.5 Q64 52 64 80" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></symbol>
+  </svg>
 
-<section id="top" style="background: #FFFFFF">
-<div style="max-width: 1200px; margin: 0 auto; padding: 72px 32px 88px; display: flex; flex-wrap: wrap; gap: 56px 64px; align-items: center">
-<div style="flex: 999 1 520px; min-width: 0">
-<p style="margin: 0 0 20px; font-size: 15px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #1C4BA0">Weihnachtsaktion · Mitmachen bis 5. Dezember</p>
-<h1 style="margin: 0 0 24px; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: clamp(36px, 4.4vw, 58px); line-height: 1.12; letter-spacing: -0.015em">„Weihnachten mit ME/CFS bedeutet für mich …“</h1>
-<p style="margin: 0 0 32px; font-size: 21px; line-height: 1.6; color: #3D4F73; max-width: 620px">Bei unserem Adventstand am 7. und 8. Dezember lesen wir Gedanken und Geschichten von Menschen mit ME/CFS vor. Erzähl uns, was du an der Weihnachtszeit vermisst – als Text oder Sprachnachricht.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 36px">
-<div style="display: flex; align-items: center; gap: 10px; padding: 12px 18px; border-radius: 14px; background: #EAF1FB">
-<svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2" stroke="#1C4BA0" stroke-width="2"></rect><path d="M3.5 10h17M8 3v4M16 3v4" stroke="#1C4BA0" stroke-width="2" stroke-linecap="round"></path></svg>
-<span style="font-weight: 700">7.–8. Dezember · Adventstand</span>
-</div>
-<div style="display: flex; align-items: center; gap: 10px; padding: 12px 18px; border-radius: 14px; background: #EAF1FB">
-<svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2" stroke="#1C4BA0" stroke-width="2"></rect><path d="m3.5 7 8.5 6 8.5-6" stroke="#1C4BA0" stroke-width="2" stroke-linejoin="round"></path></svg>
-<span style="font-weight: 700">Einsendeschluss 5. Dezember</span>
-</div>
-</div>
-<div style="display: flex; flex-wrap: wrap; gap: 14px">
-<a href="#weihnachtsaktion" style="display: inline-flex; align-items: center; gap: 10px; min-height: 56px; padding: 0 28px; border-radius: 999px; background: #1C4BA0; color: #FFFFFF; text-decoration: none; font-weight: 700">So machst du mit
-<svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
-<a href="mailto:solidaritaetfuermecfs@gmail.com?subject=Weihnachtsaktion" style="display: inline-flex; align-items: center; min-height: 56px; padding: 0 28px; border-radius: 999px; border: 2px solid #0F2552; color: #0F2552; text-decoration: none; font-weight: 700">Per E-Mail mitmachen</a>
-</div>
-</div>
-<figure style="flex: 0 1 400px; min-width: 0; margin: 0 auto">
-<img loading="lazy" src="assets/weihnachtsaktion-1.jpg" alt="Weihnachtsaktion: „Weihnachten mit ME/CFS bedeutet für mich …“ – ein Rentier am Mikrofon und ein Briefumschlag." style="width: 100%; height: auto; display: block; border-radius: 18px; box-shadow: 0 2px 4px rgba(15,37,82,0.08), 0 18px 40px rgba(15,37,82,0.14)">
-</figure>
-</div>
-</section>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="#top">
+        <img class="brand__ribbon" src="assets/img/ribbon.png" alt="" width="482" height="900">
+        <span class="brand__name">Solidarität für ME/CFS</span>
+      </a>
+      <nav class="site-nav" id="hauptmenue" aria-label="Hauptnavigation">
+        <a class="site-nav__link" href="#aktionen">Aktionen</a>
+        <a class="site-nav__link" href="#mecfs">ME/CFS</a>
+        <a class="site-nav__link" href="#verein">Verein</a>
+        <a class="site-nav__link" href="#projekte">Projekte</a>
+        <a class="site-nav__link" href="#presse">Presse</a>
+        <a class="site-nav__link" href="#merch">Merch</a>
+      </nav>
+      <a class="btn btn--nav btn--primary site-header__donate" href="#spenden">Spenden</a>
+      <button class="menu-toggle" type="button" aria-controls="hauptmenue" aria-expanded="false" aria-label="Menü öffnen">
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+      </button>
+    </div>
+  </header>
 
-<section id="mecfs">
-<div style="max-width: 1200px; margin: 0 auto; padding: 104px 32px; display: flex; flex-wrap: wrap; gap: 64px">
-<div style="flex: 999 1 560px; min-width: 0">
-<p style="margin: 0 0 14px; font-size: 15px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #1C4BA0">Kurz erklärt</p>
-<h2 style="margin: 0 0 28px; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 42px; line-height: 1.15; letter-spacing: -0.01em">Was ist ME/CFS?</h2>
-<p style="margin: 0 0 20px; font-size: 21px; line-height: 1.6">ME/CFS steht für <strong>Myalgische Enzephalomyelitis / Chronisches Fatigue-Syndrom</strong>. Es ist eine schwere neuroimmunologische Multisystemerkrankung, die meist nach einer Infektion beginnt – zum Beispiel nach COVID-19 oder Pfeiffer’schem Drüsenfieber. Die WHO führt sie seit 1969 als neurologische Erkrankung.</p>
-<p style="margin: 0 0 20px; color: #3D4F73">Das Kernmerkmal ist die <strong style="color: #0F2552">Belastungsintoleranz (PEM)</strong>: Schon kleine körperliche oder geistige Anstrengungen – ein Telefonat, ein Einkauf – können den Zustand deutlich verschlechtern, oft erst 24 bis 72 Stunden später. Viele Betroffene können nicht mehr arbeiten, ein Teil ist haus- oder bettgebunden und auf Pflege angewiesen.</p>
-<p style="margin: 0 0 28px; color: #3D4F73">Eine ursächliche Therapie gibt es bisher nicht. Pacing – ein sorgfältiger Umgang mit der eigenen Energie – kann helfen, Verschlechterungen zu vermeiden. Umso wichtiger sind Forschung, gute Versorgung und gesellschaftliches Verständnis.</p>
-<a href="https://www.mecfs.at/" target="_blank" rel="noopener noreferrer" style="font-weight: 700">Mehr bei der Österreichischen Gesellschaft für ME/CFS</a>
-</div>
-<div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
-<div style="padding: 28px 32px; border-radius: 20px; background: #EAF1FB">
-<p style="margin: 0 0 4px; font-family: 'Montserrat', sans-serif; font-size: 40px; line-height: 1.1; font-weight: 800; color: #1C4BA0">ca. 80.000</p>
-<p style="margin: 0; font-size: 17px; color: #3D4F73">Betroffene in Österreich – seit der Pandemie vermutlich deutlich mehr</p>
-</div>
-<div style="padding: 28px 32px; border-radius: 20px; background: #EAF1FB">
-<p style="margin: 0 0 4px; font-family: 'Montserrat', sans-serif; font-size: 40px; line-height: 1.1; font-weight: 800; color: #1C4BA0">ca. 80 %</p>
-<p style="margin: 0; font-size: 17px; color: #3D4F73">erkranken nach einer Infektion</p>
-</div>
-<div style="padding: 28px 32px; border-radius: 20px; background: #EAF1FB">
-<p style="margin: 0 0 4px; font-family: 'Montserrat', sans-serif; font-size: 40px; line-height: 1.1; font-weight: 800; color: #1C4BA0">seit 1969</p>
-<p style="margin: 0; font-size: 17px; color: #3D4F73">von der WHO als neurologische Erkrankung klassifiziert (G93.3)</p>
-</div>
-</div>
-</div>
-</section>
+  <main id="inhalt">
 
-<section id="ziele" style="background: #F4F7FC">
-<div style="max-width: 1200px; margin: 0 auto; padding: 104px 32px">
-<div style="display: flex; flex-wrap: wrap; gap: 24px 48px; align-items: flex-end; justify-content: space-between; margin-bottom: 48px">
-<div style="flex: 1 1 480px; min-width: 0">
-<p style="margin: 0 0 14px; font-size: 15px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #1C4BA0">Worum es uns geht</p>
-<h2 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 42px; line-height: 1.15; letter-spacing: -0.01em">Gemeinsam sichtbar für Menschen mit ME/CFS.</h2>
-</div>
-<p style="margin: 0; flex: 1 1 420px; color: #3D4F73">Wir sind ein ehrenamtlicher Verein von Betroffenen, Angehörigen und Unterstützer:innen. Dafür setzen wir uns ein:</p>
-</div>
-<div style="display: flex; flex-wrap: wrap; gap: 24px">
-<div style="flex: 1 1 250px; min-width: 0; border-radius: 22px; background: #FFFFFF; overflow: hidden">
-<div style="background: #DCE8F7; padding: 20px 16px 8px">
-<svg viewBox="0 0 200 120" style="width: 100%; height: auto; display: block" fill="none" stroke="#0F2552" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Illustration: Megafon">
-<path d="M62 51 L117 30 Q121 28.5 121 33 L121.5 87 Q121 91 117 89.5 L62 70"></path>
-<path d="M62 50 L49 50.5 Q45 51 45.5 55 L46 65.5 Q46 70 50 70 L62 70.5 Z"></path>
-<path d="M57 70.5 L63.5 93 Q64.5 96 67.5 95.5 L73 95 Q76.5 94.5 75.5 91 L70.5 73.5"></path>
-<path d="M134 47 Q142.5 60 134.5 74"></path>
-<path d="M144.5 38 Q159 60 145 83"></path>
-<path d="M155 30 Q174 60 156 91"></path>
-<path d="M28 108 Q100 104 172 108"></path>
-</svg>
-</div>
-<div style="padding: 24px 28px 30px">
-<h3 style="margin: 0 0 8px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 20px; line-height: 1.3">Sichtbarkeit schaffen</h3>
-<p style="margin: 0; font-size: 17px; color: #3D4F73">ME/CFS macht Menschen unsichtbar. Wir holen das Thema in die Öffentlichkeit.</p>
-</div>
-</div>
-<div style="flex: 1 1 250px; min-width: 0; border-radius: 22px; background: #FFFFFF; overflow: hidden">
-<div style="background: #DCE8F7; padding: 20px 16px 8px">
-<svg viewBox="0 0 200 120" style="width: 100%; height: auto; display: block" fill="none" stroke="#0F2552" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Illustration: aufgeschlagenes Buch">
-<path d="M100 38 C86 30.5 64 30 46 34.5 L46.5 92 C64 88 86 88.5 100 96 C114 88.5 136 88 153.5 92 L154 34 C136 30 114 30.5 100 38 Z"></path>
-<path d="M100 38 L100.5 96"></path>
-<path d="M58 48 C70 46 80 46.5 90 49 M58 60 C70 58 80 58.5 90 61 M58 72 C68 70 78 70.5 88 73"></path>
-<path d="M110 49 C120 46.5 130 46 142 48 M110 61 C120 58.5 130 58 142 60"></path>
-<circle cx="126" cy="77" r="8"></circle>
-<path d="M126 74.5 V81 M126 71.2 V71.6"></path>
-<path d="M28 108 Q100 104 172 108"></path>
-</svg>
-</div>
-<div style="padding: 24px 28px 30px">
-<h3 style="margin: 0 0 8px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 20px; line-height: 1.3">Aufklären</h3>
-<p style="margin: 0; font-size: 17px; color: #3D4F73">Verständliches Wissen zu Krankheitsbild, Versorgung und Unterstützung.</p>
-</div>
-</div>
-<div style="flex: 1 1 250px; min-width: 0; border-radius: 22px; background: #FFFFFF; overflow: hidden">
-<div style="background: #DCE8F7; padding: 20px 16px 8px">
-<svg viewBox="0 0 200 120" style="width: 100%; height: auto; display: block" fill="none" stroke="#0F2552" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Illustration: Laborkolben und Herz">
-<path d="M87 26 H113"></path>
-<path d="M92 26.5 V52 L66.5 95.5 Q63 102 70.5 102 H129.5 Q137 102 133.5 95.5 L108 52 V26.5"></path>
-<path d="M76 82 Q88 76 100 82 Q112 88 124.5 81.5"></path>
-<circle cx="96" cy="92" r="3"></circle>
-<circle cx="109" cy="89" r="2.4"></circle>
-<path d="M148 42 C144 33.5 133 35.5 135 44 C136.5 50 148 56 148 56 C148 56 159.5 50 161 44 C163 35.5 152 33.5 148 42 Z"></path>
-<path d="M50 42 V54 M44 48 H56 M60 66 V72 M57 69 H63"></path>
-<path d="M28 108 Q100 104 172 108"></path>
-</svg>
-</div>
-<div style="padding: 24px 28px 30px">
-<h3 style="margin: 0 0 8px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 20px; line-height: 1.3">Forschung fördern</h3>
-<p style="margin: 0; font-size: 17px; color: #3D4F73">Der gesamte Reinerlös unserer Benefizveranstaltung geht an die WE&amp;ME Foundation.</p>
-</div>
-</div>
-<div style="flex: 1 1 250px; min-width: 0; border-radius: 22px; background: #FFFFFF; overflow: hidden">
-<div style="background: #DCE8F7; padding: 20px 16px 8px">
-<svg viewBox="0 0 200 120" style="width: 100%; height: auto; display: block" fill="none" stroke="#0F2552" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Illustration: drei Menschen halten sich an den Händen">
-<circle cx="60" cy="39" r="9"></circle>
-<path d="M48 100 V65 Q48 52 60 52.5 Q72 52 72 65 V100 M60 78 V100"></path>
-<circle cx="100" cy="35" r="9.5"></circle>
-<path d="M87.5 100 V62 Q88 48.5 100 48.5 Q112 48.5 112.5 62 V100 M100 76 V100"></path>
-<circle cx="140" cy="40" r="9"></circle>
-<path d="M128 100 V66 Q128 53 140 53 Q152 53 152 66 V100 M140 79 V100"></path>
-<path d="M72 67 Q80 74 88 67.5"></path>
-<path d="M112.5 67.5 Q120 74 128 68"></path>
-<path d="M28 106 Q100 102 172 106"></path>
-</svg>
-</div>
-<div style="padding: 24px 28px 30px">
-<h3 style="margin: 0 0 8px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 20px; line-height: 1.3">Vernetzen</h3>
-<p style="margin: 0; font-size: 17px; color: #3D4F73">Betroffene, Angehörige, Fachleute und Politik an einen Tisch bringen.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
+    <!-- Aktuelle Aktion -->
+    <section class="hero" id="top">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="eyebrow">Weihnachtsaktion · Mitmachen bis 5. Dezember</p>
+          <h1 class="hero__title">„Weihnachten mit ME/CFS bedeutet für mich …“</h1>
+          <p class="hero__lead">Bei unserem Adventstand am 7. und 8. Dezember in der Grazer Herrengasse lesen wir Gedanken und Geschichten von Menschen mit ME/CFS vor. Erzähl uns, was du an der Weihnachtszeit vermisst – als Text oder Sprachnachricht.</p>
+          <div class="facts">
+            <div class="fact">
+              <svg class="icon" width="22" height="22" aria-hidden="true"><use href="#icon-calendar"/></svg>
+              <span><span class="nowrap">Mo., 7. Dez., 16–21 Uhr</span><span class="fact__sep"> · </span><span class="nowrap">Di., 8. Dez., 15–21 Uhr</span></span>
+            </div>
+            <div class="fact">
+              <svg class="icon" width="22" height="22" aria-hidden="true"><use href="#icon-pin"/></svg>
+              <span>Herrengasse Graz, Höhe Landhaus</span>
+            </div>
+            <div class="fact">
+              <svg class="icon" width="22" height="22" aria-hidden="true"><use href="#icon-mail"/></svg>
+              <span>Einsendeschluss 5. Dezember</span>
+            </div>
+          </div>
+          <div class="button-row">
+            <a class="btn btn--primary" href="#weihnachtsaktion">
+              So machst du mit
+              <svg class="icon" width="20" height="20" aria-hidden="true"><use href="#icon-arrow"/></svg>
+            </a>
+            <a class="btn btn--outline" href="mailto:solidaritaetfuermecfs@gmail.com?subject=Weihnachtsaktion">Per E-Mail</a>
+            <a class="btn btn--outline" href="https://www.instagram.com/solidaritaetfuermecfs" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" width="20" height="20" aria-hidden="true"><use href="#icon-instagram"/></svg>
+              Per Instagram-DM
+            </a>
+          </div>
+        </div>
+        <figure class="hero__media">
+          <img src="assets/img/weihnachtsaktion-1.jpg" alt="Weihnachtsaktion: „Weihnachten mit ME/CFS bedeutet für mich …“ – ein Rentier am Mikrofon und ein Briefumschlag." width="720" height="900">
+        </figure>
+      </div>
+    </section>
 
-<section id="aktionen">
-<div style="max-width: 1200px; margin: 0 auto; padding: 104px 32px">
-<p style="margin: 0 0 14px; font-size: 15px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #1C4BA0">Termine</p>
-<h2 style="margin: 0 0 48px; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 42px; line-height: 1.15; letter-spacing: -0.01em">Aktionen</h2>
-<div style="display: flex; flex-direction: column; gap: 20px">
+    <!-- Was ist ME/CFS? -->
+    <section id="mecfs">
+      <div class="container intro__inner">
+        <div class="intro__text">
+          <p class="eyebrow">Kurz erklärt</p>
+          <h2 class="section-title mb-28">Was ist ME/CFS?</h2>
+          <p class="intro__lead">ME/CFS steht für <strong>Myalgische Enzephalomyelitis / Chronisches Fatigue-Syndrom</strong>. Es ist eine schwere neuroimmunologische Multisystemerkrankung, die meist nach einer Infektion beginnt – zum Beispiel nach COVID-19 oder Pfeiffer’schem Drüsenfieber. Die WHO führt sie seit 1969 als neurologische Erkrankung.</p>
+          <p class="intro__copy">Das Kernmerkmal ist die <strong>Belastungsintoleranz (PEM)</strong>: Schon kleine körperliche oder geistige Anstrengungen – ein Telefonat, ein Einkauf – können den Zustand deutlich verschlechtern, oft erst 24 bis 72 Stunden später. Viele Betroffene können nicht mehr arbeiten, ein Teil ist haus- oder bettgebunden und auf Pflege angewiesen.</p>
+          <p class="intro__copy">Eine ursächliche Therapie gibt es bisher nicht. Pacing – ein sorgfältiger Umgang mit der eigenen Energie – kann helfen, Verschlechterungen zu vermeiden. Umso wichtiger sind Forschung, gute Versorgung und gesellschaftliches Verständnis.</p>
+          <a class="bold" href="https://www.mecfs.at/" target="_blank" rel="noopener noreferrer">Mehr bei der Österreichischen Gesellschaft für ME/CFS</a>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <p class="stat__value">ca. 80.000</p>
+            <p class="stat__label">Betroffene in Österreich – seit der Pandemie vermutlich deutlich mehr</p>
+          </div>
+          <div class="stat">
+            <p class="stat__value">ca. 80 %</p>
+            <p class="stat__label">erkranken nach einer Infektion</p>
+          </div>
+          <div class="stat">
+            <p class="stat__value">seit 1969</p>
+            <p class="stat__label">von der WHO als neurologische Erkrankung klassifiziert (G93.3)</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<article id="weihnachtsaktion" style="display: flex; flex-wrap: wrap; gap: 24px 40px; padding: 36px; border-radius: 24px; border: 1px solid #D9E3F1">
-<div style="flex: 0 0 150px">
-<p style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 34px; line-height: 1.05; color: #1C4BA0">7.–8.</p>
-<p style="margin: 4px 0 0; font-weight: 700">Dezember 2026</p>
-<p style="margin: 2px 0 0; color: #3D4F73">Adventstand</p>
-</div>
-<div style="flex: 999 1 420px; min-width: 0">
-<p style="margin: 0 0 6px; display: inline-block; padding: 2px 12px; border-radius: 999px; background: #EAF1FB; font-size: 14px; font-weight: 700; color: #1C4BA0">Mitmachen bis 5. Dezember</p>
-<h3 style="margin: 0 0 10px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 24px; line-height: 1.3">Weihnachtsaktion: „Weihnachten mit ME/CFS bedeutet für mich …“</h3>
-<p style="margin: 0 0 6px">Bei unserem Adventstand lesen wir Gedanken und Geschichten von Menschen mit ME/CFS vor.</p>
-<p style="margin: 0 0 24px; font-size: 17px; color: #3D4F73">[Ort und Uhrzeit des Adventstands ergänzen]</p>
-<p style="margin: 0 0 14px; font-weight: 700">So kannst du mitmachen</p>
-<ol style="margin: 0 0 24px; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px">
-<li style="display: flex; gap: 16px; align-items: flex-start"><span style="flex: none; width: 36px; height: 36px; border-radius: 50%; border: 2px solid #0F2552; background: #DCE8F7; display: flex; align-items: center; justify-content: center; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 16px">1</span><span style="padding-top: 4px">Schreib uns, was du an der Weihnachtszeit vermisst und wie Weihnachten für dich mit ME/CFS aussieht.</span></li>
-<li style="display: flex; gap: 16px; align-items: flex-start"><span style="flex: none; width: 36px; height: 36px; border-radius: 50%; border: 2px solid #0F2552; background: #DCE8F7; display: flex; align-items: center; justify-content: center; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 16px">2</span><span style="padding-top: 4px">Schick uns deinen Text oder deine Sprachnachricht per Instagram-DM oder an <a href="mailto:solidaritaetfuermecfs@gmail.com" style="overflow-wrap: anywhere">solidaritaetfuermecfs@gmail.com</a>.</span></li>
-<li style="display: flex; gap: 16px; align-items: flex-start"><span style="flex: none; width: 36px; height: 36px; border-radius: 50%; border: 2px solid #0F2552; background: #DCE8F7; display: flex; align-items: center; justify-content: center; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 16px">3</span><span style="padding-top: 4px">Sag uns, ob wir deinen Namen nennen dürfen oder ob du anonym bleiben möchtest.</span></li>
-</ol>
-<div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center">
-<a href="mailto:solidaritaetfuermecfs@gmail.com?subject=Weihnachtsaktion" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; border-radius: 999px; background: #1C4BA0; color: #FFFFFF; text-decoration: none; font-weight: 700">Per E-Mail mitmachen</a>
-<a href="https://www.instagram.com/solidaritaetfuermecfs" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; border-radius: 999px; border: 2px solid #1C4BA0; color: #1C4BA0; text-decoration: none; font-weight: 700">Per Instagram-DM</a>
-<span style="font-weight: 700">Einsendeschluss: 5. Dezember</span>
-</div>
-</div>
-</article>
+    <!-- Worum es uns geht -->
+    <section class="section--tint" id="ziele">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head__title">
+            <p class="eyebrow">Worum es uns geht</p>
+            <h2 class="section-title mb-0">Gemeinsam sichtbar für Menschen mit ME/CFS.</h2>
+          </div>
+          <p class="section-head__text">Wir sind ein ehrenamtlicher Verein von Betroffenen, Angehörigen und Unterstützer:innen. Dafür setzen wir uns ein:</p>
+        </div>
+        <div class="cards">
+          <div class="goal">
+            <div class="goal__art">
+              <svg viewBox="0 0 200 120" fill="none" stroke="#0F2552" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Illustration: Megafon">
+                <path d="M62 51 L117 30 Q121 28.5 121 33 L121.5 87 Q121 91 117 89.5 L62 70"/>
+                <path d="M62 50 L49 50.5 Q45 51 45.5 55 L46 65.5 Q46 70 50 70 L62 70.5 Z"/>
+                <path d="M57 70.5 L63.5 93 Q64.5 96 67.5 95.5 L73 95 Q76.5 94.5 75.5 91 L70.5 73.5"/>
+                <path d="M134 47 Q142.5 60 134.5 74"/>
+                <path d="M144.5 38 Q159 60 145 83"/>
+                <path d="M155 30 Q174 60 156 91"/>
+                <path d="M28 108 Q100 104 172 108"/>
+              </svg>
+            </div>
+            <div class="goal__body">
+              <h3 class="card-title">Sichtbarkeit schaffen</h3>
+              <p class="card-text">ME/CFS macht Menschen unsichtbar. Wir holen das Thema in die Öffentlichkeit.</p>
+            </div>
+          </div>
+          <div class="goal">
+            <div class="goal__art">
+              <svg viewBox="0 0 200 120" fill="none" stroke="#0F2552" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Illustration: aufgeschlagenes Buch">
+                <path d="M100 38 C86 30.5 64 30 46 34.5 L46.5 92 C64 88 86 88.5 100 96 C114 88.5 136 88 153.5 92 L154 34 C136 30 114 30.5 100 38 Z"/>
+                <path d="M100 38 L100.5 96"/>
+                <path d="M58 48 C70 46 80 46.5 90 49 M58 60 C70 58 80 58.5 90 61 M58 72 C68 70 78 70.5 88 73"/>
+                <path d="M110 49 C120 46.5 130 46 142 48 M110 61 C120 58.5 130 58 142 60"/>
+                <circle cx="126" cy="77" r="8"/>
+                <path d="M126 74.5 V81 M126 71.2 V71.6"/>
+                <path d="M28 108 Q100 104 172 108"/>
+              </svg>
+            </div>
+            <div class="goal__body">
+              <h3 class="card-title">Aufklären</h3>
+              <p class="card-text">Verständliches Wissen zu Krankheitsbild, Versorgung und Unterstützung.</p>
+            </div>
+          </div>
+          <div class="goal">
+            <div class="goal__art">
+              <svg viewBox="0 0 200 120" fill="none" stroke="#0F2552" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Illustration: Laborkolben und Herz">
+                <path d="M87 26 H113"/>
+                <path d="M92 26.5 V52 L66.5 95.5 Q63 102 70.5 102 H129.5 Q137 102 133.5 95.5 L108 52 V26.5"/>
+                <path d="M76 82 Q88 76 100 82 Q112 88 124.5 81.5"/>
+                <circle cx="96" cy="92" r="3"/>
+                <circle cx="109" cy="89" r="2.4"/>
+                <path d="M148 42 C144 33.5 133 35.5 135 44 C136.5 50 148 56 148 56 C148 56 159.5 50 161 44 C163 35.5 152 33.5 148 42 Z"/>
+                <path d="M50 42 V54 M44 48 H56 M60 66 V72 M57 69 H63"/>
+                <path d="M28 108 Q100 104 172 108"/>
+              </svg>
+            </div>
+            <div class="goal__body">
+              <h3 class="card-title">Forschung fördern</h3>
+              <p class="card-text">Der gesamte Reinerlös unserer Benefizveranstaltung geht an die WE&amp;ME Foundation.</p>
+            </div>
+          </div>
+          <div class="goal">
+            <div class="goal__art">
+              <svg viewBox="0 0 200 120" fill="none" stroke="#0F2552" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Illustration: drei Menschen halten sich an den Händen">
+                <circle cx="60" cy="39" r="9"/>
+                <path d="M48 100 V65 Q48 52 60 52.5 Q72 52 72 65 V100 M60 78 V100"/>
+                <circle cx="100" cy="35" r="9.5"/>
+                <path d="M87.5 100 V62 Q88 48.5 100 48.5 Q112 48.5 112.5 62 V100 M100 76 V100"/>
+                <circle cx="140" cy="40" r="9"/>
+                <path d="M128 100 V66 Q128 53 140 53 Q152 53 152 66 V100 M140 79 V100"/>
+                <path d="M72 67 Q80 74 88 67.5"/>
+                <path d="M112.5 67.5 Q120 74 128 68"/>
+                <path d="M28 106 Q100 102 172 106"/>
+              </svg>
+            </div>
+            <div class="goal__body">
+              <h3 class="card-title">Vernetzen</h3>
+              <p class="card-text">Betroffene, Angehörige, Fachleute und Politik an einen Tisch bringen.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<article style="display: flex; flex-wrap: wrap; gap: 24px 40px; padding: 36px; border-radius: 24px; background: #EAF1FB">
-<div style="flex: 0 0 150px">
-<p style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 34px; line-height: 1.05; color: #1C4BA0">22.</p>
-<p style="margin: 4px 0 0; font-weight: 700">Mai 2027</p>
-<p style="margin: 2px 0 0; color: #3D4F73">Samstag</p>
-</div>
-<div style="flex: 1 1 420px; min-width: 0">
-<p style="margin: 0 0 6px; display: inline-block; padding: 2px 12px; border-radius: 999px; background: #FFFFFF; font-size: 14px; font-weight: 700; color: #1C4BA0">2. Ausgabe</p>
-<h3 style="margin: 0 0 8px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 24px; line-height: 1.3">Solidarität für ME/CFS – Benefizveranstaltung</h3>
-<p style="margin: 0 0 20px; color: #3D4F73">Hauptplatz Graz · 9–18 Uhr · mit freundlicher Unterstützung der Stadt Graz</p>
-<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 20px">
-<div style="flex: 1 1 200px; padding: 18px 20px; border-radius: 16px; background: #FFFFFF"><p style="margin: 0 0 2px; font-weight: 700; color: #1C4BA0">ab 9 Uhr</p><p style="margin: 0; font-size: 17px">Benefiz-Flohmarkt</p></div>
-<div style="flex: 1 1 200px; padding: 18px 20px; border-radius: 16px; background: #FFFFFF"><p style="margin: 0 0 2px; font-weight: 700; color: #1C4BA0">ab 11 Uhr</p><p style="margin: 0; font-size: 17px">Redebeiträge von Betroffenen sowie aus Medizin, Forschung und Politik</p></div>
-<div style="flex: 1 1 200px; padding: 18px 20px; border-radius: 16px; background: #FFFFFF"><p style="margin: 0 0 2px; font-weight: 700; color: #1C4BA0">ganztags</p><p style="margin: 0; font-size: 17px">Live-Musik, Essen und Austausch</p></div>
-</div>
-<p style="margin: 0; font-size: 17px; color: #3D4F73">Der gesamte Reinerlös geht an die WE&amp;ME Foundation. Das genaue Programm folgt – <a href="rueckschau-2026.html" style="font-weight: 700">Rückschau auf 2026</a>.</p>
-</div>
-<figure style="flex: 0 1 240px; min-width: 0; margin: 0 auto; align-self: center">
-<a href="assets/flyer-graz-2027.jpg" style="display: block; border-radius: 14px; overflow: hidden; box-shadow: 0 2px 4px rgba(15,37,82,0.08), 0 12px 28px rgba(15,37,82,0.12)"><img loading="lazy" src="assets/flyer-graz-2027.jpg" alt="Flyer: Solidarität für ME/CFS, 2. Ausgabe, Hauptplatz Graz, 9 bis 18 Uhr. Benefiz-Flohmarkt ab 9 Uhr, Redebeiträge ab 11 Uhr, Live-Musik. Der gesamte Reinerlös geht an die WE&amp;ME Foundation." style="width: 100%; height: auto; display: block"></a>
-<figcaption style="margin-top: 10px; font-size: 15px; color: #3D4F73; text-align: center">Flyer vergrößern</figcaption>
-</figure>
-</article>
+    <!-- Aktionen -->
+    <section id="aktionen">
+      <div class="container">
+        <p class="eyebrow">Termine</p>
+        <h2 class="section-title mb-40">Aktionen</h2>
 
-<article style="display: flex; flex-wrap: wrap; gap: 24px 40px; padding: 32px 36px; border-radius: 24px; border: 1px solid #D9E3F1">
-<div style="flex: 0 0 150px">
-<p style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 34px; line-height: 1.05; color: #1C4BA0">Linz</p>
-<p style="margin: 4px 0 0; font-weight: 700">Termin folgt</p>
-</div>
-<div style="flex: 1 1 420px; min-width: 0">
-<p style="margin: 0 0 6px; display: inline-block; padding: 2px 12px; border-radius: 999px; background: #EAF1FB; font-size: 14px; font-weight: 700; color: #1C4BA0">In Planung</p>
-<h3 style="margin: 0 0 8px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 24px; line-height: 1.3">Solidarität für ME/CFS in Linz</h3>
-<p style="margin: 0; color: #3D4F73">Wir planen eine Veranstaltung in Linz. Sobald der Termin feststeht, findet ihr ihn hier und auf Instagram.</p>
-</div>
-</article>
+        <div class="events">
+          <article class="event" id="weihnachtsaktion">
+            <div class="event__date">
+              <p class="event__day">7.–8.</p>
+              <p class="event__month">Dezember 2026</p>
+              <p class="event__note">Adventstand</p>
+            </div>
+            <div class="event__body">
+              <p class="event__badge">Mitmachen bis 5. Dezember</p>
+              <h3 class="event__title">Weihnachtsaktion: „Weihnachten mit ME/CFS bedeutet für mich …“</h3>
+              <div class="chips">
+                <span class="chip"><svg class="icon" width="20" height="20" aria-hidden="true"><use href="#icon-clock"/></svg>Mo., 7. Dez. · 16–21 Uhr</span>
+                <span class="chip"><svg class="icon" width="20" height="20" aria-hidden="true"><use href="#icon-clock"/></svg>Di., 8. Dez. · 15–21 Uhr</span>
+                <span class="chip chip--wrap"><svg class="icon" width="20" height="20" aria-hidden="true"><use href="#icon-pin"/></svg>Herrengasse Graz, Höhe Landhaus</span>
+              </div>
+              <p class="event__intro">Bei unserem Adventstand lesen wir Gedanken und Geschichten von Menschen mit ME/CFS vor. So kannst du mitmachen:</p>
+              <ol class="steps">
+                <li><span class="steps__number">1</span><span class="steps__text">Schreib uns, was du an der Weihnachtszeit vermisst und wie Weihnachten für dich mit ME/CFS aussieht.</span></li>
+                <li><span class="steps__number">2</span><span class="steps__text">Schick uns deinen Text oder deine Sprachnachricht per Instagram-DM oder an <a class="break-anywhere" href="mailto:solidaritaetfuermecfs@gmail.com">solidaritaetfuermecfs@gmail.com</a>.</span></li>
+                <li><span class="steps__number">3</span><span class="steps__text">Sag uns, ob wir deinen Namen nennen dürfen oder ob du anonym bleiben möchtest.</span></li>
+              </ol>
+              <div class="event__actions">
+                <a class="btn btn--sm btn--primary" href="mailto:solidaritaetfuermecfs@gmail.com?subject=Weihnachtsaktion">Per E-Mail</a>
+                <a class="btn btn--sm btn--outline-accent" href="https://www.instagram.com/solidaritaetfuermecfs" target="_blank" rel="noopener noreferrer">Per Instagram-DM</a>
+              </div>
+            </div>
+            <figure class="flyer">
+              <a class="flyer__link" href="assets/img/weihnachtsaktion-2.jpg"><img loading="lazy" src="assets/img/weihnachtsaktion-2.jpg" alt="Flyer zur Weihnachtsaktion: So kannst du mitmachen – drei Schritte, Einsendeschluss 5. Dezember." width="720" height="900"></a>
+              <figcaption>Flyer ansehen</figcaption>
+            </figure>
+          </article>
 
-</div>
+          <article class="event">
+            <div class="event__date">
+              <p class="event__day">22.</p>
+              <p class="event__month">Mai 2027</p>
+              <p class="event__note">Samstag</p>
+            </div>
+            <div class="event__body">
+              <p class="event__badge">2. Benefizveranstaltung</p>
+              <h3 class="event__title">Solidarität für ME/CFS am Grazer Hauptplatz</h3>
+              <p class="event__meta">Hauptplatz Graz · 9–18 Uhr · mit freundlicher Unterstützung der Stadt Graz</p>
+              <p class="event__text">Benefiz-Flohmarkt ab 9 Uhr, Redebeiträge von Betroffenen sowie aus Medizin, Forschung und Politik ab 11 Uhr, dazu Live-Musik. Der gesamte Reinerlös geht an die WE&amp;ME Foundation. Das genaue Programm folgt.</p>
+            </div>
+            <figure class="flyer">
+              <a class="flyer__link" href="assets/img/flyer-graz-2027.jpg"><img loading="lazy" src="assets/img/flyer-graz-2027.jpg" alt="Flyer: Solidarität für ME/CFS, 2. Ausgabe, Hauptplatz Graz, 9 bis 18 Uhr." width="874" height="1093"></a>
+              <figcaption>Flyer ansehen</figcaption>
+            </figure>
+          </article>
 
-<h3 style="margin: 72px 0 24px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 26px">Vergangene Aktionen</h3>
-<div style="display: flex; flex-direction: column; gap: 20px">
+          <article class="event">
+            <div class="event__date">
+              <p class="event__day">Linz</p>
+              <p class="event__month">Termin folgt</p>
+              <p class="event__note">Oberösterreich</p>
+            </div>
+            <div class="event__body">
+              <p class="event__badge">In Planung</p>
+              <h3 class="event__title">Benefizveranstaltung in Linz</h3>
+              <p class="event__meta">Linz · Datum und Ort folgen</p>
+              <p class="event__text">Wir planen eine Veranstaltung in Linz. Sobald der Termin feststeht, findet ihr ihn hier und auf Instagram.</p>
+            </div>
+            <figure class="flyer flyer--empty">
+              <div class="flyer__placeholder">Flyer folgt</div>
+            </figure>
+          </article>
+        </div>
 
-<article style="display: flex; flex-wrap: wrap; gap: 24px 40px; padding: 32px 36px; border-radius: 24px; background: #F4F7FC">
-<div style="flex: 0 0 150px">
-<p style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 34px; line-height: 1.05; color: #3D4F73">17.</p>
-<p style="margin: 4px 0 0; font-weight: 700">November 2026</p>
-<p style="margin: 2px 0 0; color: #3D4F73">Dienstag, 18 Uhr</p>
-</div>
-<div style="flex: 999 1 420px; min-width: 0">
-<p style="margin: 0 0 6px; display: inline-block; padding: 2px 12px; border-radius: 999px; background: #FFFFFF; font-size: 14px; font-weight: 700; color: #3D4F73">Rückblick</p>
-<h3 style="margin: 0 0 8px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 24px; line-height: 1.3">Benefizkonzert zugunsten der ME/CFS-Forschung</h3>
-<p style="margin: 0 0 12px; color: #3D4F73">Vortragssaal der Landesmusikschule Perg · gestaltet von Schülerinnen und Schülern der Klasse Veronika Gusenbauer · in Kooperation mit unserem Verein</p>
-<p style="margin: 0; font-size: 17px; color: #3D4F73">Danke an alle, die musiziert, zugehört und gespendet haben! <a href="#videos" style="font-weight: 700">Zum Video vom Konzert</a></p>
-</div>
-<figure style="flex: 0 1 200px; min-width: 0; margin: 0 auto; align-self: center">
-<a href="assets/flyer-benefizkonzert-perg.jpg" style="display: block; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(15,37,82,0.08), 0 10px 24px rgba(15,37,82,0.10)"><img loading="lazy" src="assets/flyer-benefizkonzert-perg.jpg" alt="Flyer: Benefizkonzert zugunsten der ME/CFS-Forschung, Dienstag 17. November 2026, 18 Uhr, Vortragssaal der Landesmusikschule Perg, Eintritt frei." style="width: 100%; height: auto; display: block"></a>
-<figcaption style="margin-top: 10px; font-size: 15px; color: #3D4F73; text-align: center">Flyer vergrößern</figcaption>
-</figure>
-</article>
+        <h3 class="events-past-title">Vergangene Aktionen</h3>
+        <div class="events">
+          <article class="event event--past">
+            <div class="event__date">
+              <p class="event__day">17.</p>
+              <p class="event__month">November 2026</p>
+              <p class="event__note">Dienstag</p>
+            </div>
+            <div class="event__body">
+              <p class="event__badge">Rückblick</p>
+              <h3 class="event__title">Benefizkonzert zugunsten der ME/CFS-Forschung</h3>
+              <p class="event__meta">Landesmusikschule Perg · 18 Uhr · in Kooperation mit unserem Verein</p>
+              <p class="event__text">Gestaltet von Schülerinnen und Schülern der Klasse Veronika Gusenbauer. Danke an alle, die musiziert, zugehört und gespendet haben! <a class="bold" href="#videos">Zum Video</a></p>
+            </div>
+            <figure class="flyer">
+              <a class="flyer__link" href="assets/img/flyer-benefizkonzert-perg.jpg"><img loading="lazy" src="assets/img/flyer-benefizkonzert-perg.jpg" alt="Flyer: Benefizkonzert zugunsten der ME/CFS-Forschung, 17. November 2026, Landesmusikschule Perg." width="760" height="1060"></a>
+              <figcaption>Flyer ansehen</figcaption>
+            </figure>
+          </article>
 
-<article style="display: flex; flex-wrap: wrap; gap: 24px 40px; padding: 32px 36px; border-radius: 24px; background: #F4F7FC">
-<div style="flex: 0 0 150px">
-<p style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 34px; line-height: 1.05; color: #3D4F73">17.</p>
-<p style="margin: 4px 0 0; font-weight: 700">Mai 2026</p>
-<p style="margin: 2px 0 0; color: #3D4F73">Hauptplatz Graz</p>
-</div>
-<div style="flex: 999 1 420px; min-width: 0">
-<p style="margin: 0 0 6px; display: inline-block; padding: 2px 12px; border-radius: 999px; background: #FFFFFF; font-size: 14px; font-weight: 700; color: #3D4F73">Rückblick</p>
-<h3 style="margin: 0 0 8px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 24px; line-height: 1.3">Solidarität für ME/CFS – 1. Benefizveranstaltung</h3>
-<p style="margin: 0; color: #3D4F73">Redebeiträge, Benefiz-Flohmarkt und Musik am Grazer Hauptplatz. <a href="rueckschau-2026.html" style="font-weight: 700">Zur Rückschau 2026</a></p>
-</div>
-</article>
+          <article class="event event--past">
+            <div class="event__date">
+              <p class="event__day">17.</p>
+              <p class="event__month">Mai 2026</p>
+              <p class="event__note">Sonntag</p>
+            </div>
+            <div class="event__body">
+              <p class="event__badge">Rückblick</p>
+              <h3 class="event__title">Solidarität für ME/CFS – 1. Benefizveranstaltung</h3>
+              <p class="event__meta">Hauptplatz Graz · 11–18 Uhr</p>
+              <p class="event__text">Redebeiträge, Benefiz-Flohmarkt und Live-Musik am Grazer Hauptplatz – mit hunderten Besucher:innen. An diesem Tag kamen über 30.000 Euro für die ME/CFS-Forschung zusammen. Danke! <a class="bold" href="rueckblick-2026.html">Zum Rückblick 2026</a></p>
+            </div>
+            <figure class="flyer">
+              <a class="flyer__link" href="assets/img/flyer-graz-2026.jpg"><img loading="lazy" src="assets/img/flyer-graz-2026.jpg" alt="Flyer: Solidarität für ME/CFS, 17. Mai 2026, 11 bis 18 Uhr, Hauptplatz Graz." width="760" height="1075"></a>
+              <figcaption>Flyer ansehen</figcaption>
+            </figure>
+          </article>
+        </div>
+      </div>
+    </section>
 
-</div>
-</div>
-</section>
+    <!-- Stimmen von Betroffenen -->
+    <section class="section--tint" id="betroffene">
+      <div class="container">
+        <div class="section-head section-head--tight">
+          <h2 class="section-title mb-0">Stimmen von Betroffenen</h2>
+          <a class="bold" href="betroffene.html">Alle Berichte lesen</a>
+        </div>
+        <div class="cards">
+          <figure class="quote">
+            <blockquote>„Wir wollten die Welt entdecken – jetzt ist Staubsaugen ein Marathon.“</blockquote>
+            <figcaption><strong>Barbara, 35</strong> · erkrankt 2022 nach mehreren COVID-Infektionen</figcaption>
+          </figure>
+          <figure class="quote">
+            <blockquote>„Man kommt vom Leben ins Überleben.“</blockquote>
+            <figcaption><strong>Markus, 29</strong></figcaption>
+          </figure>
+          <figure class="quote">
+            <blockquote>„Meine Freund/innen und Familienmitglieder habe ich seit vielen Jahren nicht mehr gesehen.“</blockquote>
+            <figcaption><strong>Anonym, 31</strong></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
 
-<section id="betroffene" style="background: #F4F7FC">
-<div style="max-width: 1200px; margin: 0 auto; padding: 104px 32px">
-<div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-end; justify-content: space-between; margin-bottom: 48px">
-<h2 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 42px; line-height: 1.15; letter-spacing: -0.01em">Stimmen von Betroffenen</h2>
-<a href="betroffene.html" style="font-weight: 700">Alle Berichte lesen</a>
-</div>
-<div style="display: flex; flex-wrap: wrap; gap: 24px">
-<figure style="flex: 1 1 320px; min-width: 0; margin: 0; padding: 36px; border-radius: 24px; background: #FFFFFF; display: flex; flex-direction: column; justify-content: space-between; gap: 28px">
-<blockquote style="margin: 0; font-size: 23px; line-height: 1.45">„Wir wollten die Welt entdecken – jetzt ist Staubsaugen ein Marathon.“</blockquote>
-<figcaption style="font-size: 17px; color: #3D4F73"><strong style="color: #0F2552">Barbara, 35</strong> · erkrankt 2022 nach mehreren COVID-Infektionen</figcaption>
-</figure>
-<figure style="flex: 1 1 320px; min-width: 0; margin: 0; padding: 36px; border-radius: 24px; background: #FFFFFF; display: flex; flex-direction: column; justify-content: space-between; gap: 28px">
-<blockquote style="margin: 0; font-size: 23px; line-height: 1.45">„Man kommt vom Leben ins Überleben.“</blockquote>
-<figcaption style="font-size: 17px; color: #3D4F73"><strong style="color: #0F2552">Markus, 29</strong></figcaption>
-</figure>
-<figure style="flex: 1 1 320px; min-width: 0; margin: 0; padding: 36px; border-radius: 24px; background: #FFFFFF; display: flex; flex-direction: column; justify-content: space-between; gap: 28px">
-<blockquote style="margin: 0; font-size: 23px; line-height: 1.45">„Meine Freund/innen und Familienmitglieder habe ich seit vielen Jahren nicht mehr gesehen.“</blockquote>
-<figcaption style="font-size: 17px; color: #3D4F73"><strong style="color: #0F2552">Anonym, 31</strong></figcaption>
-</figure>
-</div>
-</div>
-</section>
+    <!-- Videos -->
+    <section id="videos">
+      <div class="container videos__inner">
+        <div class="videos__intro">
+          <h2 class="section-title mb-12">Videos</h2>
+          <p>Einblicke und Stimmen von unseren Aktionen. Die Videos starten erst, wenn ihr sie anklickt.</p>
+        </div>
+        <div class="videos__list">
+          <figure class="video">
+            <div class="video__frame">
+              <video controls preload="none" playsinline poster="assets/video/benefizkonzert-perg-2026.jpg" aria-label="Video: Rede beim Benefizkonzert in der Landesmusikschule Perg">
+                <source src="assets/video/benefizkonzert-perg-2026.mp4" type="video/mp4">
+                Dein Browser kann dieses Video nicht abspielen. <a href="assets/video/benefizkonzert-perg-2026.mp4">Video herunterladen</a>
+              </video>
+            </div>
+            <figcaption>Benefizkonzert in der Landesmusikschule Perg, 17. November 2026 · 2:03</figcaption>
+          </figure>
+          <figure class="video">
+            <div class="video__frame">
+              <video controls preload="none" playsinline poster="assets/video/ankuendigung-2026.jpg" aria-label="Video: Solidarität für ME/CFS am Grazer Hauptplatz">
+                <source src="assets/video/ankuendigung-2026.mp4" type="video/mp4">
+                Dein Browser kann dieses Video nicht abspielen. <a href="assets/video/ankuendigung-2026.mp4">Video herunterladen</a>
+              </video>
+            </div>
+            <figcaption>Ankündigungsvideo 2026, Grazer Hauptplatz · 1:32</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
 
-<section id="videos">
-<div style="max-width: 1200px; margin: 0 auto; padding: 104px 32px; display: flex; flex-wrap: wrap; gap: 40px 56px; align-items: flex-start">
-<div style="flex: 1 1 300px; min-width: 0">
-<h2 style="margin: 0 0 12px; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 42px; line-height: 1.15; letter-spacing: -0.01em">Videos</h2>
-<p style="margin: 0; color: #3D4F73">Einblicke und Stimmen von unseren Aktionen. Die Videos starten erst, wenn ihr sie anklickt.</p>
-</div>
-<div style="flex: 0 1 680px; min-width: 0; display: flex; flex-wrap: wrap; gap: 28px; align-items: flex-start">
-<figure style="flex: 1 1 280px; min-width: 0; max-width: 340px; margin: 0">
-<div style="position: relative; border-radius: 20px; overflow: hidden; background: #0F2552; aspect-ratio: 9 / 16">
-<video controls preload="none" playsinline poster="assets/video-rede-poster.jpg" style="width: 100%; height: 100%; object-fit: cover; display: block" aria-label="Video: Rede beim Benefizkonzert in der Landesmusikschule Perg"><source src="assets/video-rede.mp4" type="video/mp4">Dein Browser kann dieses Video nicht abspielen. <a href="assets/video-rede.mp4">Video herunterladen</a></video>
+    <!-- Presse -->
+    <section class="section--tint" id="presse">
+      <div class="container">
+        <p class="eyebrow">In den Medien</p>
+        <h2 class="section-title">Presse &amp; Medien</h2>
+        <p class="section-lead mb-44">Danke an alle Redaktionen, die über ME/CFS und unsere Aktionen berichtet haben.</p>
+        <div class="press">
+          <a class="press-card" href="https://steiermark.tv/sendungen/da-bin-i-daham/da-bin-i-daham-beitraege/solidaritaet-fuer-mecfs-am-grazer-hauptplatz" target="_blank" rel="noopener noreferrer">
+            <div class="press-card__source">
+              <span class="press-card__icon"><svg class="icon" width="20" height="20" aria-hidden="true"><use href="#icon-tv"/></svg></span>
+              <span><span class="press-card__outlet">Steiermark TV · „Da bin i daham“</span><span class="press-card__type">TV-Beitrag · Mai 2026</span></span>
+            </div>
+            <p class="press-card__title">Solidarität für ME/CFS am Grazer Hauptplatz</p>
+            <span class="press-card__cta">Beitrag ansehen →</span>
+          </a>
+          <a class="press-card" href="http://www.hiway-tv.at/solidaritaet-und-aufmerksamkeit-fuer-me-cfs/" target="_blank" rel="noopener noreferrer">
+            <div class="press-card__source">
+              <span class="press-card__icon"><svg class="icon" width="20" height="20" aria-hidden="true"><use href="#icon-tv"/></svg></span>
+              <span><span class="press-card__outlet">hiway TV</span><span class="press-card__type">TV-Beitrag</span></span>
+            </div>
+            <p class="press-card__title">Solidarität und Aufmerksamkeit für ME/CFS</p>
+            <span class="press-card__cta">Beitrag ansehen →</span>
+          </a>
+          <a class="press-card" href="https://open.spotify.com/episode/6Y7fVhRDW8iNMQ5pwwOlZ3" target="_blank" rel="noopener noreferrer">
+            <div class="press-card__source">
+              <span class="press-card__icon"><svg class="icon" width="20" height="20" aria-hidden="true"><use href="#icon-mic"/></svg></span>
+              <span><span class="press-card__outlet">Pflegestützpunkt Podcast</span><span class="press-card__type">Podcast · Spotify · Mai 2026</span></span>
+            </div>
+            <p class="press-card__title">Betroffen. Postvirales Syndrom</p>
+            <span class="press-card__cta">Folge anhören →</span>
+          </a>
+          <a class="press-card" href="https://www.kleinezeitung.at/artikel/23006105/wie-eine-grazerin-eine-benefizveranstaltung-fuer-ihre-schwerkranke" target="_blank" rel="noopener noreferrer">
+            <div class="press-card__source">
+              <span class="press-card__icon"><svg class="icon" width="20" height="20" aria-hidden="true"><use href="#icon-article"/></svg></span>
+              <span><span class="press-card__outlet">Kleine Zeitung</span><span class="press-card__type">Artikel</span></span>
+            </div>
+            <p class="press-card__title">Wie eine Grazerin eine Benefizveranstaltung für ihre schwerkranke … [Titel prüfen]</p>
+            <span class="press-card__cta">Artikel lesen →</span>
+          </a>
+          <a class="press-card" href="https://www.kleinezeitung.at/artikel/25547656/30000-euro-fuer-die-me-cfs-forschung" target="_blank" rel="noopener noreferrer">
+            <div class="press-card__source">
+              <span class="press-card__icon"><svg class="icon" width="20" height="20" aria-hidden="true"><use href="#icon-article"/></svg></span>
+              <span><span class="press-card__outlet">Kleine Zeitung</span><span class="press-card__type">Artikel · Kleine Zeitung+</span></span>
+            </div>
+            <p class="press-card__title">30.000 Euro für die ME/CFS-Forschung</p>
+            <span class="press-card__cta">Artikel lesen →</span>
+          </a>
+          <a class="press-card" href="https://grazer.at/story/de/benefizveranstaltung-am-grazer-hauptplatz-fuer-me-0wLvLAhw/" target="_blank" rel="noopener noreferrer">
+            <div class="press-card__source">
+              <span class="press-card__icon"><svg class="icon" width="20" height="20" aria-hidden="true"><use href="#icon-article"/></svg></span>
+              <span><span class="press-card__outlet">Der Grazer</span><span class="press-card__type">Artikel</span></span>
+            </div>
+            <p class="press-card__title">Benefizveranstaltung am Grazer Hauptplatz: Solidarität für ME/CFS</p>
+            <span class="press-card__cta">Artikel lesen →</span>
+          </a>
+          <a class="press-card" href="https://www.facebook.com/photo/?fbid=1367439805206357&amp;set=a.342817477668600" target="_blank" rel="noopener noreferrer">
+            <div class="press-card__source">
+              <span class="press-card__icon"><svg class="icon" width="20" height="20" aria-hidden="true"><use href="#icon-photo"/></svg></span>
+              <span><span class="press-card__outlet">Robert Krotzer · Facebook</span><span class="press-card__type">Beitrag · Mai 2026</span></span>
+            </div>
+            <p class="press-card__title">Solidarität sichtbar gemacht: Hunderte Menschen setzten in Graz Zeichen für ME/CFS</p>
+            <span class="press-card__cta">Beitrag ansehen →</span>
+          </a>
+        </div>
+      </div>
+    </section>
 
-</div>
-<figcaption style="margin-top: 12px; font-size: 16px; color: #3D4F73">Benefizkonzert in der Landesmusikschule Perg, 17. November 2026 · 2:03</figcaption>
-</figure>
-<figure style="flex: 1 1 280px; min-width: 0; max-width: 340px; margin: 0">
-<div style="position: relative; border-radius: 20px; overflow: hidden; background: #0F2552; aspect-ratio: 9 / 16">
-<video controls preload="none" playsinline poster="assets/video-poster.jpg" style="width: 100%; height: 100%; object-fit: cover; display: block" aria-label="Video: Solidarität für ME/CFS am Grazer Hauptplatz"><source src="assets/video.mp4" type="video/mp4">Dein Browser kann dieses Video nicht abspielen. <a href="assets/video.mp4">Video herunterladen</a></video>
+    <!-- Verein -->
+    <section id="verein">
+      <div class="container">
+        <div class="about">
+          <div class="about__title">
+            <p class="eyebrow">Über uns</p>
+            <h2 class="section-title mb-0">Unser Verein</h2>
+          </div>
+          <div class="about__text">
+            <p class="about__lead">Im Vorstand von „Solidarität für ME/CFS“ engagieren sich Betroffene und Angehörige. Gemeinsam setzen wir uns dafür ein, dass ME/CFS in der breiten Öffentlichkeit die Anerkennung bekommt, die die Erkrankung verdient – und dass Betroffene gehört werden.</p>
+            <p>Mit kleinen und großen Veranstaltungen sammeln wir Spenden für die biomedizinische Forschung. Wir verstehen uns als Netzwerk, das Vereine, Initiativen und Organisationen rund um ME/CFS miteinander verbindet. Und mit unserer Selbsthilfegruppe bieten wir Betroffenen eine Anlaufstelle.</p>
+            <div class="pills">
+              <span class="pill"><span class="pill__label">Gegründet</span><strong>2026</strong></span>
+              <span class="pill"><span class="pill__label">Sitz</span><strong>Graz</strong></span>
+              <span class="pill"><span class="pill__label">ZVR-Zahl</span><strong>1555221996</strong></span>
+            </div>
+          </div>
+        </div>
 
-</div>
-<figcaption style="margin-top: 12px; font-size: 16px; color: #3D4F73">Ankündigungsvideo 2026, Grazer Hauptplatz · 1:32</figcaption>
-</figure>
-</div>
-</div>
-</section>
+        <h3 class="group-title">Unser Team</h3>
+        <div class="team">
+          <div class="person">
+            <div class="avatar"><svg width="56" height="56" aria-hidden="true"><use href="#icon-person"/></svg></div>
+            <div class="person__info">
+              <p class="person__name">Antonia Gusenbauer <span class="person__degree">BEd BA</span></p>
+              <p class="person__role">Obfrau und Geschäftsführerin</p>
+            </div>
+          </div>
+          <div class="person">
+            <div class="avatar"><svg width="56" height="56" aria-hidden="true"><use href="#icon-person"/></svg></div>
+            <div class="person__info">
+              <p class="person__name">Markus Anko</p>
+              <p class="person__role">Vorstand</p>
+            </div>
+          </div>
+          <div class="person">
+            <div class="avatar"><svg width="56" height="56" aria-hidden="true"><use href="#icon-person"/></svg></div>
+            <div class="person__info">
+              <p class="person__name">Carmen Rinnhofer <span class="person__degree">BA</span></p>
+              <p class="person__role">Obfrau-Stellvertreterin</p>
+            </div>
+          </div>
+          <div class="person">
+            <div class="avatar"><svg width="56" height="56" aria-hidden="true"><use href="#icon-person"/></svg></div>
+            <div class="person__info">
+              <p class="person__name">Martin Brandstätter</p>
+              <p class="person__role">Kassier</p>
+            </div>
+          </div>
+        </div>
 
-<section id="verein" style="background: #F4F7FC">
-<div style="max-width: 1200px; margin: 0 auto; padding: 104px 32px">
-<div style="display: flex; flex-wrap: wrap; gap: 40px 64px; margin-bottom: 56px">
-<div style="flex: 1 1 360px; min-width: 0">
-<p style="margin: 0 0 14px; font-size: 15px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #1C4BA0">Über uns</p>
-<h2 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 42px; line-height: 1.15; letter-spacing: -0.01em">Unser Verein</h2>
-</div>
-<div style="flex: 999 1 520px; min-width: 0">
-<p style="margin: 0 0 18px; font-size: 20px">Hinter „Solidarität für ME/CFS“ steht ein ehrenamtlicher Verein aus Graz. Wir sind Betroffene, Angehörige und Unterstützer:innen und setzen uns dafür ein, dass Menschen mit ME/CFS gesehen, ernst genommen und gut versorgt werden.</p>
-<p style="margin: 0; color: #3D4F73">[Gründungsjahr, Vereinszweck und ZVR-Zahl ergänzen]</p>
-</div>
-</div>
-<h3 style="margin: 0 0 24px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 22px">Vorstand</h3>
-<div style="display: flex; flex-wrap: wrap; gap: 20px">
-<div style="flex: 1 1 230px; min-width: 0; padding: 28px; border-radius: 22px; background: #FFFFFF; display: flex; gap: 18px; align-items: center">
-<div style="flex: none; width: 72px; height: 72px; border-radius: 50%; background: #DCE8F7; display: flex; align-items: flex-end; justify-content: center; overflow: hidden">
-<svg width="56" height="56" viewBox="0 0 80 80" fill="none" stroke="#0F2552" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><circle cx="40" cy="31" r="12.5"></circle><path d="M16 80 Q16 52 40 52.5 Q64 52 64 80"></path></svg>
-</div>
-<div><p style="margin: 0; font-weight: 700">Antonia Gusenbauer, BEd BA</p><p style="margin: 0; font-size: 16px; color: #3D4F73">[Funktion] · Organisation</p></div>
-</div>
-<div style="flex: 1 1 230px; min-width: 0; padding: 28px; border-radius: 22px; background: #FFFFFF; display: flex; gap: 18px; align-items: center">
-<div style="flex: none; width: 72px; height: 72px; border-radius: 50%; background: #DCE8F7; display: flex; align-items: flex-end; justify-content: center; overflow: hidden">
-<svg width="56" height="56" viewBox="0 0 80 80" fill="none" stroke="#0F2552" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><circle cx="40" cy="31" r="12.5"></circle><path d="M16 80 Q16 52 40 52.5 Q64 52 64 80"></path></svg>
-</div>
-<div><p style="margin: 0; font-weight: 700">[Name]</p><p style="margin: 0; font-size: 16px; color: #3D4F73">[Funktion, z. B. Stellvertretung]</p></div>
-</div>
-<div style="flex: 1 1 230px; min-width: 0; padding: 28px; border-radius: 22px; background: #FFFFFF; display: flex; gap: 18px; align-items: center">
-<div style="flex: none; width: 72px; height: 72px; border-radius: 50%; background: #DCE8F7; display: flex; align-items: flex-end; justify-content: center; overflow: hidden">
-<svg width="56" height="56" viewBox="0 0 80 80" fill="none" stroke="#0F2552" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><circle cx="40" cy="31" r="12.5"></circle><path d="M16 80 Q16 52 40 52.5 Q64 52 64 80"></path></svg>
-</div>
-<div><p style="margin: 0; font-weight: 700">[Name]</p><p style="margin: 0; font-size: 16px; color: #3D4F73">[Funktion, z. B. Kassier:in]</p></div>
-</div>
-<div style="flex: 1 1 230px; min-width: 0; padding: 28px; border-radius: 22px; background: #FFFFFF; display: flex; gap: 18px; align-items: center">
-<div style="flex: none; width: 72px; height: 72px; border-radius: 50%; background: #DCE8F7; display: flex; align-items: flex-end; justify-content: center; overflow: hidden">
-<svg width="56" height="56" viewBox="0 0 80 80" fill="none" stroke="#0F2552" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><circle cx="40" cy="31" r="12.5"></circle><path d="M16 80 Q16 52 40 52.5 Q64 52 64 80"></path></svg>
-</div>
-<div><p style="margin: 0; font-weight: 700">[Name]</p><p style="margin: 0; font-size: 16px; color: #3D4F73">[Funktion, z. B. Schriftführung]</p></div>
-</div>
-</div>
-</div>
-</section>
+        <h3 class="group-title">Rechnungsprüfung</h3>
+        <div class="team team--compact">
+          <div class="person person--compact">
+            <div class="avatar avatar--sm"><svg width="42" height="42" aria-hidden="true"><use href="#icon-person"/></svg></div>
+            <div class="person__info">
+              <p class="person__name">Slavko Lajšić</p>
+              <p class="person__role">Rechnungsprüfer</p>
+            </div>
+          </div>
+          <div class="person person--compact">
+            <div class="avatar avatar--sm"><svg width="42" height="42" aria-hidden="true"><use href="#icon-person"/></svg></div>
+            <div class="person__info">
+              <p class="person__name">Evelyn Zielinski</p>
+              <p class="person__role">Rechnungsprüferin</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section id="projekte">
-<div style="max-width: 1200px; margin: 0 auto; padding: 104px 32px">
-<h2 style="margin: 0 0 16px; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 42px; line-height: 1.15; letter-spacing: -0.01em">Projekte</h2>
-<p style="margin: 0 0 48px; max-width: 640px; color: #3D4F73">Woran wir das ganze Jahr über arbeiten – laufend und in Planung.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 20px">
-<div style="flex: 1 1 250px; min-width: 0; padding: 32px; border-radius: 22px; background: #F4F7FC">
-<svg width="60" height="60" viewBox="0 0 64 64" fill="none" stroke="#0F2552" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13 H38 Q42 13 42 17 V31 Q42 35 38 35 H22 L14 42 V35 H10 Q6 35 6 31 V17 Q6 13 10 13 Z"></path><path d="M46 27 H54 Q58 27 58 31 V43 Q58 47 54 47 H52 V53 L45 47 H32 Q28 47 28 43 V40"></path></svg>
-<h3 style="margin: 18px 0 8px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 20px">Selbsthilfegruppe</h3>
-<p style="margin: 0; font-size: 17px; color: #3D4F73">Austausch und gegenseitige Unterstützung für Betroffene und Angehörige. [Ort, Termine, Format ergänzen]</p>
-</div>
-<div style="flex: 1 1 250px; min-width: 0; padding: 32px; border-radius: 22px; background: #F4F7FC">
-<svg width="60" height="60" viewBox="0 0 64 64" fill="none" stroke="#0F2552" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="10" width="48" height="30" rx="3"></rect><path d="M32 40 V48 M21 57 L32 48 L43 57 M16 20 H36 M16 29 H46"></path></svg>
-<h3 style="margin: 18px 0 8px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 20px">Fortbildungen</h3>
-<p style="margin: 0; font-size: 17px; color: #3D4F73">Aktuelles Wissen zu ME/CFS weitergeben. [Zielgruppe und Termine ergänzen]</p>
-</div>
-<div style="flex: 1 1 250px; min-width: 0; padding: 32px; border-radius: 22px; background: #F4F7FC">
-<svg width="60" height="60" viewBox="0 0 64 64" fill="none" stroke="#0F2552" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 25 L32 9 L58 25 Z"></path><path d="M6 25 Q10 31 14.5 25 Q19 31 23.5 25 Q28 31 32 25 Q36 31 40.5 25 Q45 31 49.5 25 Q54 31 58 25"></path><path d="M10 28 V57 M54 28 V57 M17 45 H47"></path></svg>
-<h3 style="margin: 18px 0 8px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 20px">Benefizveranstaltungen</h3>
-<p style="margin: 0; font-size: 17px; color: #3D4F73">Öffentliche Events wie am Grazer Hauptplatz – für Sichtbarkeit und Spenden.</p>
-</div>
-<div style="flex: 1 1 250px; min-width: 0; padding: 32px; border-radius: 22px; background: #F4F7FC">
-<svg width="60" height="60" viewBox="0 0 64 64" fill="none" stroke="#0F2552" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M32 7 A16 16 0 0 1 42.5 35 Q39.5 38 39.5 42 V45 H24.5 V42 Q24.5 38 21.5 35 A16 16 0 0 1 32 7 Z"></path><path d="M26 51 H38 M28 56.5 H36"></path></svg>
-<h3 style="margin: 18px 0 8px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 20px">In Planung</h3>
-<p style="margin: 0; font-size: 17px; color: #3D4F73">[Weitere laufende oder geplante Projekte ergänzen]</p>
-</div>
-</div>
-</div>
-</section>
+    <!-- Projekte -->
+    <section class="section--tint" id="projekte">
+      <div class="container">
+        <h2 class="section-title">Projekte</h2>
+        <p class="section-lead">Woran wir das ganze Jahr über arbeiten.</p>
+        <div class="projects">
+          <div class="project">
+            <div class="project__head">
+              <svg width="60" height="60" viewBox="0 0 64 64" fill="none" stroke="#0F2552" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13 H38 Q42 13 42 17 V31 Q42 35 38 35 H22 L14 42 V35 H10 Q6 35 6 31 V17 Q6 13 10 13 Z"/><path d="M46 27 H54 Q58 27 58 31 V43 Q58 47 54 47 H52 V53 L45 47 H32 Q28 47 28 43 V40"/></svg>
+              <span class="tag">Laufend</span>
+            </div>
+            <h3 class="card-title">Selbsthilfegruppe</h3>
+            <p class="card-text">Monatliches Treffen in Präsenz in Graz – zum Austausch und zur gegenseitigen Unterstützung.</p>
+          </div>
+          <div class="project">
+            <div class="project__head">
+              <svg width="60" height="60" viewBox="0 0 64 64" fill="none" stroke="#0F2552" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="10" width="48" height="30" rx="3"/><path d="M32 40 V48 M21 57 L32 48 L43 57 M16 20 H36 M16 29 H46"/></svg>
+              <span class="tag">In Planung</span>
+            </div>
+            <h3 class="card-title">Fortbildungen</h3>
+            <p class="card-text">Fortbildungen rund um ME/CFS sind derzeit in Planung.</p>
+          </div>
+          <div class="project">
+            <div class="project__head">
+              <svg width="60" height="60" viewBox="0 0 64 64" fill="none" stroke="#0F2552" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 25 L32 9 L58 25 Z"/><path d="M6 25 Q10 31 14.5 25 Q19 31 23.5 25 Q28 31 32 25 Q36 31 40.5 25 Q45 31 49.5 25 Q54 31 58 25"/><path d="M10 28 V57 M54 28 V57 M17 45 H47"/></svg>
+              <span class="tag">Laufend</span>
+            </div>
+            <h3 class="card-title">Benefizveranstaltungen</h3>
+            <p class="card-text">Veranstaltungen in Graz, Linz und eventuell weiteren Städten – für Sichtbarkeit und Spenden.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section id="kooperationen" style="background: #F4F7FC">
-<div style="max-width: 1200px; margin: 0 auto; padding: 104px 32px">
-<h2 style="margin: 0 0 16px; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 42px; line-height: 1.15; letter-spacing: -0.01em">Kooperationen</h2>
-<p style="margin: 0 0 48px; max-width: 640px; color: #3D4F73">Gemeinsam erreichen wir mehr. Danke an alle, die mit uns zusammenarbeiten.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 20px">
-<a href="https://www.graz.at/" target="_blank" rel="noopener noreferrer" style="flex: 1 1 210px; min-width: 0; padding: 26px; border-radius: 22px; background: #FFFFFF; text-decoration: none; color: #0F2552; display: block"><div style="height: 64px; display: flex; align-items: center; margin-bottom: 16px"><img loading="lazy" src="assets/sponsor-stadt-graz.png" alt="Stadt Graz" style="max-height: 52px; max-width: 100%; width: auto; height: auto; display: block"></div><p style="margin: 0; font-weight: 700">Stadt Graz</p><p style="margin: 0; font-size: 16px; color: #3D4F73">Kooperation Benefizveranstaltung</p></a>
-<a href="https://www.weandmecfs.org/de/" target="_blank" rel="noopener noreferrer" style="flex: 1 1 210px; min-width: 0; padding: 26px; border-radius: 22px; background: #FFFFFF; text-decoration: none; color: #0F2552; display: block"><div style="height: 64px; display: flex; align-items: center; margin-bottom: 16px"><img loading="lazy" src="assets/partner-weme.svg" alt="WE&amp;ME Foundation" style="max-height: 64px; max-width: 100%; width: auto; height: auto; display: block"></div><p style="margin: 0; font-weight: 700">WE&amp;ME Foundation</p><p style="margin: 0; font-size: 16px; color: #3D4F73">Empfängerin des Reinerlöses</p></a>
-<a href="https://www.unlockju.at/" target="_blank" rel="noopener noreferrer" style="flex: 1 1 210px; min-width: 0; padding: 26px; border-radius: 22px; background: #FFFFFF; text-decoration: none; color: #0F2552; display: block"><div style="height: 64px; display: flex; align-items: center; margin-bottom: 16px"><img loading="lazy" src="assets/partner-unlockju.png" alt="UN:LOCKJU – Long Covid, ME/CFS, Kinder und Jugendliche OÖ" style="max-height: 56px; max-width: 100%; width: auto; height: auto; display: block"></div><p style="margin: 0; font-weight: 700">UN:LOCKJU</p><p style="margin: 0; font-size: 16px; color: #3D4F73">Long Covid und ME/CFS bei Kindern und Jugendlichen, OÖ</p></a>
-<a href="https://ooe-mecfs.at/" target="_blank" rel="noopener noreferrer" style="flex: 1 1 210px; min-width: 0; padding: 26px; border-radius: 22px; background: #FFFFFF; text-decoration: none; color: #0F2552; display: block"><div style="height: 64px; display: flex; align-items: center; margin-bottom: 16px"><img loading="lazy" src="assets/partner-ooe-mecfs.png" alt="Betroffeneninitiative ME/CFS Oberösterreich" style="height: 60px; width: 60px; display: block"></div><p style="margin: 0; font-weight: 700">Betroffeneninitiative ME/CFS Oberösterreich</p><p style="margin: 0; font-size: 16px; color: #3D4F73">Selbstvertretung von Betroffenen</p></a>
-<div style="flex: 1 1 210px; min-width: 0; padding: 26px; border-radius: 22px; border: 1px dashed #A9BEDC"><div style="height: 64px; display: flex; align-items: center; margin-bottom: 16px; color: #3D4F73">[Logo]</div><p style="margin: 0; font-weight: 700">[Name]</p><p style="margin: 0; font-size: 16px; color: #3D4F73">Webdesign &amp; Umsetzung</p></div>
-</div>
-</div>
-</section>
+    <!-- Merch -->
+    <section id="merch">
+      <div class="container merch__inner">
+        <div class="merch__text">
+          <p class="eyebrow">Merch</p>
+          <h2 class="section-title mb-20">Zeig Solidarität – auch im Alltag.</h2>
+          <p class="merch__lead">In unserem Spreadshop findet ihr Shirts, Hoodies und mehr mit der blauen Schleife. Jeder Kauf macht ME/CFS sichtbar, und der Erlös geht an die WE&amp;ME Foundation.</p>
+          <a class="btn btn--primary" href="https://solidaritaet-fuer-mecfs.myspreadshop.at/" target="_blank" rel="noopener noreferrer">
+            Zum Merch-Shop
+            <svg class="icon" width="20" height="20" aria-hidden="true"><use href="#icon-arrow"/></svg>
+          </a>
+        </div>
+        <div class="merch__art">
+          <svg viewBox="0 0 240 200" fill="none" stroke="#0F2552" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Illustration: T-Shirt mit blauer Schleife">
+            <path d="M92 24 Q120 40 148 24 L190 42 L212 82 L184 96 L176 84 L176 178 Q120 184 64 178 L64 84 L56 96 L28 82 L50 42 Z" fill="#FFFFFF"/>
+            <path d="M92 24 Q120 46 148 24"/>
+            <path d="M120 78 C112 70 102 76 106 86 L120 112 M120 78 C128 70 138 76 134 86 L118 114" stroke="#1C4BA0" stroke-width="5"/>
+            <path d="M30 190 Q120 186 210 190"/>
+          </svg>
+        </div>
+      </div>
+    </section>
 
-<section id="instagram">
-<div style="max-width: 1200px; margin: 0 auto; padding: 104px 32px">
-<div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-end; justify-content: space-between; margin-bottom: 40px">
-<div>
-<h2 style="margin: 0 0 8px; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 42px; line-height: 1.15; letter-spacing: -0.01em">Aktuelles auf Instagram</h2>
-<p style="margin: 0; color: #3D4F73">Neuigkeiten, Termine und Einblicke – <a href="https://www.instagram.com/solidaritaetfuermecfs" target="_blank" rel="noopener noreferrer">@solidaritaetfuermecfs</a></p>
-</div>
-<a href="https://www.instagram.com/solidaritaetfuermecfs" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 22px; border-radius: 999px; border: 2px solid #1C4BA0; color: #1C4BA0; text-decoration: none; font-weight: 700">
-<svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"></rect><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"></circle><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"></circle></svg>
-Folgen</a>
-</div>
-<div style="display: flex; flex-wrap: wrap; gap: 16px">
-<div style="flex: 1 1 260px; min-width: 0; max-width: 340px; aspect-ratio: 9 / 16; border-radius: 20px; background: #DCE8F7; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: 24px; box-sizing: border-box; text-align: center">
-<div style="width: 64px; height: 64px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="#0F2552"></path></svg></div>
-<p style="margin: 0; font-weight: 700">Neues Ankündigungsvideo</p>
-<p style="margin: 0; font-size: 16px; color: #3D4F73">folgt in Kürze</p>
-</div>
-<div style="flex: 999 1 520px; min-width: 0; display: flex; flex-wrap: wrap; gap: 16px; align-content: flex-start">
-<div style="flex: 1 1 calc(33.333% - 11px); min-width: 140px; aspect-ratio: 1 / 1; border-radius: 20px; background: #F4F7FC; border: 1px solid #D9E3F1; display: flex; align-items: center; justify-content: center; color: #3D4F73; font-size: 15px">Instagram-Beitrag</div>
-<div style="flex: 1 1 calc(33.333% - 11px); min-width: 140px; aspect-ratio: 1 / 1; border-radius: 20px; background: #F4F7FC; border: 1px solid #D9E3F1; display: flex; align-items: center; justify-content: center; color: #3D4F73; font-size: 15px">Instagram-Beitrag</div>
-<div style="flex: 1 1 calc(33.333% - 11px); min-width: 140px; aspect-ratio: 1 / 1; border-radius: 20px; background: #F4F7FC; border: 1px solid #D9E3F1; display: flex; align-items: center; justify-content: center; color: #3D4F73; font-size: 15px">Instagram-Beitrag</div>
-<div style="flex: 1 1 calc(33.333% - 11px); min-width: 140px; aspect-ratio: 1 / 1; border-radius: 20px; background: #F4F7FC; border: 1px solid #D9E3F1; display: flex; align-items: center; justify-content: center; color: #3D4F73; font-size: 15px">Instagram-Beitrag</div>
-<div style="flex: 1 1 calc(33.333% - 11px); min-width: 140px; aspect-ratio: 1 / 1; border-radius: 20px; background: #F4F7FC; border: 1px solid #D9E3F1; display: flex; align-items: center; justify-content: center; color: #3D4F73; font-size: 15px">Instagram-Beitrag</div>
-<div style="flex: 1 1 calc(33.333% - 11px); min-width: 140px; aspect-ratio: 1 / 1; border-radius: 20px; background: #F4F7FC; border: 1px solid #D9E3F1; display: flex; align-items: center; justify-content: center; color: #3D4F73; font-size: 15px">Instagram-Beitrag</div>
-</div>
-</div>
-</div>
-</section>
+    <!-- Kooperationen -->
+    <section class="section--tint" id="kooperationen">
+      <div class="container">
+        <h2 class="section-title">Kooperationen</h2>
+        <p class="section-lead">Gemeinsam erreichen wir mehr. Danke an alle, die mit uns zusammenarbeiten.</p>
+        <div class="partners">
+          <a class="partner" href="https://www.graz.at/" target="_blank" rel="noopener noreferrer">
+            <div class="partner__logo"><img loading="lazy" src="assets/img/sponsor-stadt-graz.png" alt="Stadt Graz" style="--logo-height: 52px" width="443" height="200"></div>
+            <p class="partner__name">Stadt Graz</p>
+            <p class="partner__text">Kooperation Benefizveranstaltung</p>
+          </a>
+          <a class="partner" href="https://www.weandmecfs.org/de/" target="_blank" rel="noopener noreferrer">
+            <div class="partner__logo"><img loading="lazy" src="assets/img/partner-weme.svg" alt="WE&amp;ME Foundation" style="--logo-height: 64px" width="220" height="186"></div>
+            <p class="partner__name">WE&amp;ME Foundation</p>
+            <p class="partner__text">Empfängerin des Reinerlöses</p>
+          </a>
+          <a class="partner" href="https://www.unlockju.at/" target="_blank" rel="noopener noreferrer">
+            <div class="partner__logo"><img loading="lazy" src="assets/img/partner-unlockju.png" alt="UN:LOCKJU – Long Covid, ME/CFS, Kinder und Jugendliche OÖ" width="520" height="187"></div>
+            <p class="partner__name">UN:LOCKJU</p>
+            <p class="partner__text">Long Covid und ME/CFS bei Kindern und Jugendlichen, OÖ</p>
+          </a>
+          <a class="partner" href="https://ooe-mecfs.at/" target="_blank" rel="noopener noreferrer">
+            <div class="partner__logo"><img loading="lazy" src="assets/img/partner-ooe-mecfs.png" alt="Betroffeneninitiative ME/CFS Oberösterreich" style="--logo-height: 60px" width="240" height="240"></div>
+            <p class="partner__name">Betroffeneninitiative ME/CFS Oberösterreich</p>
+            <p class="partner__text">Selbstvertretung von Betroffenen</p>
+          </a>
+          <div class="partner">
+            <div class="partner__logo"><img loading="lazy" src="assets/img/partner-one-eighty.png" alt="One Eighty Association" style="--logo-height: 64px" width="480" height="298"></div>
+            <p class="partner__name">One Eighty Association</p>
+            <p class="partner__text">Verein, Graz</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section id="spenden" style="background: #0F2552; color: #FFFFFF">
-<div style="max-width: 1200px; margin: 0 auto; padding: 96px 32px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
-<div style="flex: 999 1 520px; min-width: 0">
-<h2 style="margin: 0 0 20px; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 44px; line-height: 1.12; letter-spacing: -0.01em">Jede Spende hilft der Forschung.</h2>
-<p style="margin: 0 0 32px; font-size: 20px; color: #D2DDF0; max-width: 600px">Der gesamte Reinerlös unserer Benefizveranstaltung geht an die WE&amp;ME Foundation, die Forschung zu ME/CFS fördert. Ihr könnt direkt dort spenden – oder vor Ort in unsere Spendenboxen.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 14px">
-<a href="https://www.weandmecfs.org/donate-and-help/#donation-account-information" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; min-height: 56px; padding: 0 28px; border-radius: 999px; background: #FFFFFF; color: #0F2552; text-decoration: none; font-weight: 700">An WE&amp;ME spenden</a>
-<a href="https://solidaritaet-fuer-mecfs.myspreadshop.at/" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; min-height: 56px; padding: 0 28px; border-radius: 999px; border: 2px solid #FFFFFF; color: #FFFFFF; text-decoration: none; font-weight: 700">Zum Merch-Shop</a>
-</div>
-</div>
-<div style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
-<div style="padding: 22px 26px; border-radius: 18px; background: rgba(255,255,255,0.08)"><p style="margin: 0 0 2px; font-weight: 700">Online</p><p style="margin: 0; font-size: 16px; color: #D2DDF0">Spendenkonto der WE&amp;ME Foundation</p></div>
-<div style="padding: 22px 26px; border-radius: 18px; background: rgba(255,255,255,0.08)"><p style="margin: 0 0 2px; font-weight: 700">Vor Ort</p><p style="margin: 0; font-size: 16px; color: #D2DDF0">Spendenboxen und QR-Code am Hauptplatz</p></div>
-<div style="padding: 22px 26px; border-radius: 18px; background: rgba(255,255,255,0.08)"><p style="margin: 0 0 2px; font-weight: 700">Merchandise</p><p style="margin: 0; font-size: 16px; color: #D2DDF0">Erlös geht an WE&amp;ME</p></div>
-</div>
-</div>
-</section>
+    <!-- Spenden -->
+    <section class="section--dark donate" id="spenden">
+      <div class="container">
+        <h2 class="donate__title">Jede Spende hilft.</h2>
+        <p class="donate__lead">Ihr könnt direkt an unseren Verein spenden oder an die WE&amp;ME Foundation, die Forschung zu ME/CFS fördert. Vor Ort freuen wir uns über Spenden in unseren Spendenboxen.</p>
+        <div class="donate__options">
+          <div class="account">
+            <div class="account__details">
+              <p class="donate__label">Vereinskonto</p>
+              <p class="donate__name">Solidarität ME/CFS</p>
+              <p class="account__field">IBAN</p>
+              <p class="account__iban">AT91 3836 7000 0053 7746</p>
+              <p class="account__field">Verwendungszweck</p>
+              <p class="account__purpose">Spende</p>
+            </div>
+            <figure class="account__qr">
+              <img loading="lazy" src="assets/img/qr-vereinskonto.png" alt="QR-Code für eine Überweisung auf das Vereinskonto Solidarität ME/CFS" width="260" height="260">
+              <figcaption>Mit der Banking-App scannen</figcaption>
+            </figure>
+          </div>
+          <div class="donate-alt">
+            <p class="donate__label">Für die Forschung</p>
+            <p class="donate__name">WE&amp;ME Foundation</p>
+            <p>Der gesamte Reinerlös unserer Benefizveranstaltung geht an die WE&amp;ME Foundation. Ihr könnt auch direkt dort spenden.</p>
+            <a class="btn btn--md btn--light" href="https://www.weandmecfs.org/donate-and-help/#donation-account-information" target="_blank" rel="noopener noreferrer">An WE&amp;ME spenden</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section id="mitwirken">
-<div style="max-width: 1200px; margin: 0 auto; padding: 104px 32px">
-<h2 style="margin: 0 0 16px; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 42px; line-height: 1.15; letter-spacing: -0.01em">Mitwirken</h2>
-<p style="margin: 0 0 44px; color: #3D4F73; max-width: 640px">Unsere Arbeit lebt vom Engagement vieler. So könnt ihr helfen:</p>
-<div style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 36px">
-<div style="flex: 1 1 280px; min-width: 0; padding: 30px; border-radius: 22px; background: #F4F7FC"><h3 style="margin: 0 0 8px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 20px">Sachspenden</h3><p style="margin: 0; font-size: 17px; color: #3D4F73">Gut erhaltene Dinge für den Benefiz-Flohmarkt.</p></div>
-<div style="flex: 1 1 280px; min-width: 0; padding: 30px; border-radius: 22px; background: #F4F7FC"><h3 style="margin: 0 0 8px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 20px">Sponsoring</h3><p style="margin: 0; font-size: 17px; color: #3D4F73">Finanzielle Unterstützung oder Sachleistungen.</p></div>
-<div style="flex: 1 1 280px; min-width: 0; padding: 30px; border-radius: 22px; background: #F4F7FC"><h3 style="margin: 0 0 8px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 20px">Mithelfen</h3><p style="margin: 0; font-size: 17px; color: #3D4F73">Bei Organisation, Aufbau und Durchführung.</p></div>
-</div>
-<p style="margin: 0; font-size: 20px">Schreibt uns: <a href="mailto:solidaritaetfuermecfs@gmail.com" style="font-weight: 700; word-break: break-word">solidaritaetfuermecfs@gmail.com</a></p>
-</div>
-</section>
+    <!-- Mitwirken -->
+    <section id="mitwirken">
+      <div class="container">
+        <h2 class="section-title">Mitwirken</h2>
+        <p class="section-lead mb-44">Unsere Arbeit lebt vom Engagement vieler. So könnt ihr helfen:</p>
+        <div class="help">
+          <div class="help-card">
+            <h3 class="card-title">Sachspenden</h3>
+            <p class="card-text">Gut erhaltene Dinge für den Benefiz-Flohmarkt.</p>
+          </div>
+          <div class="help-card">
+            <h3 class="card-title">Sponsoring</h3>
+            <p class="card-text">Finanzielle Unterstützung oder Sachleistungen.</p>
+          </div>
+          <div class="help-card">
+            <h3 class="card-title">Mithelfen</h3>
+            <p class="card-text">Bei Organisation, Aufbau und Durchführung.</p>
+          </div>
+        </div>
+        <p class="contact-line">Schreibt uns: <a href="mailto:solidaritaetfuermecfs@gmail.com">solidaritaetfuermecfs@gmail.com</a></p>
+      </div>
+    </section>
 
-<section id="sponsoren" style="background: #F4F7FC">
-<div style="max-width: 1200px; margin: 0 auto; padding: 72px 32px">
-<p style="margin: 0 0 24px; font-size: 15px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #3D4F73">Danke an unsere Sponsor:innen</p>
-<div style="display: flex; flex-wrap: wrap; gap: 14px">
-<a href="https://www.graz.at/" target="_blank" rel="noopener noreferrer" style="flex: 1 1 180px; height: 96px; box-sizing: border-box; padding: 16px 22px; border-radius: 14px; background: #FFFFFF; display: flex; align-items: center; justify-content: center"><img loading="lazy" src="assets/sponsor-stadt-graz.png" alt="Stadt Graz" style="max-width: 100%; max-height: 56px; width: auto; height: auto; display: block"></a>
-<a href="https://kvk-koerner.com/de/" target="_blank" rel="noopener noreferrer" style="flex: 1 1 180px; height: 96px; box-sizing: border-box; padding: 16px 22px; border-radius: 14px; background: #FFFFFF; display: flex; align-items: center; justify-content: center"><img loading="lazy" src="assets/sponsor-koerner.png" alt="KVK Koerner" style="max-width: 100%; max-height: 56px; width: auto; height: auto; display: block"></a>
-<a href="https://www.rinnhofer.at/" target="_blank" rel="noopener noreferrer" style="flex: 1 1 180px; height: 96px; box-sizing: border-box; padding: 16px 22px; border-radius: 14px; background: #FFFFFF; display: flex; align-items: center; justify-content: center"><img loading="lazy" src="assets/sponsor-rinnhofer.png" alt="Auto Rinnhofer" style="max-width: 100%; max-height: 56px; width: auto; height: auto; display: block"></a>
-<a href="https://graz.gruene.at/" target="_blank" rel="noopener noreferrer" style="flex: 1 1 180px; height: 96px; box-sizing: border-box; padding: 16px 22px; border-radius: 14px; background: #FFFFFF; display: flex; align-items: center; justify-content: center"><img loading="lazy" src="assets/sponsor-gruene-graz.png" alt="Die Grünen Graz" style="max-width: 100%; max-height: 56px; width: auto; height: auto; display: block"></a>
-<a href="https://www.ordination-quitt.at/" target="_blank" rel="noopener noreferrer" style="flex: 1 1 180px; height: 96px; box-sizing: border-box; padding: 16px 22px; border-radius: 14px; background: #FFFFFF; display: flex; align-items: center; justify-content: center"><img loading="lazy" src="assets/sponsor-quitt.png" alt="Dr.in Neshat Quitt" style="max-width: 100%; max-height: 56px; width: auto; height: auto; display: block"></a>
-<a href="https://schneid.gmbh/" target="_blank" rel="noopener noreferrer" style="flex: 1 1 180px; height: 96px; box-sizing: border-box; padding: 16px 22px; border-radius: 14px; background: #FFFFFF; display: flex; align-items: center; justify-content: center"><img loading="lazy" src="assets/sponsor-schneid.png" alt="Schneid GmbH" style="max-width: 100%; max-height: 56px; width: auto; height: auto; display: block"></a>
-<a href="https://www.nextliberty.com/" target="_blank" rel="noopener noreferrer" style="flex: 1 1 180px; height: 96px; box-sizing: border-box; padding: 16px 22px; border-radius: 14px; background: #FFFFFF; display: flex; align-items: center; justify-content: center"><img loading="lazy" src="assets/sponsor-next-liberty.png" alt="Next Liberty" style="max-width: 100%; max-height: 56px; width: auto; height: auto; display: block"></a>
-<div style="flex: 1 1 180px; height: 96px; box-sizing: border-box; padding: 16px 22px; border-radius: 14px; background: #FFFFFF; display: flex; align-items: center; justify-content: center"><img loading="lazy" src="assets/sponsor-raiffeisen-hks.png" alt="Raiffeisenbank Heiligenkreuz-Kirchbach-St. Georgen" style="max-width: 100%; max-height: 56px; width: auto; height: auto; display: block"></div>
-<a href="https://www.duonachtigall.at/" target="_blank" rel="noopener noreferrer" style="flex: 1 1 180px; height: 96px; box-sizing: border-box; padding: 16px 22px; border-radius: 14px; background: #FFFFFF; display: flex; align-items: center; justify-content: center"><img loading="lazy" src="assets/sponsor-duo-nachtigall.png" alt="Duo Nachtigall" style="max-width: 100%; max-height: 56px; width: auto; height: auto; display: block"></a>
-</div>
-<p style="margin: 20px 0 0; font-size: 16px; color: #3D4F73">Außerdem danken wir KPÖ Graz, Gesundheitsstadtrat Robert Krotzer, Raiffeisenbank St. Peter Graz, feeling Handelsges.m.b.H, Hügelland Apotheke und Grasmug GmbH.</p>
-</div>
-</section>
+    <!-- Sponsor:innen -->
+    <section class="section--tint sponsors" id="sponsoren">
+      <div class="container">
+        <p class="sponsors__title">Danke an unsere Sponsor:innen</p>
+        <div class="sponsors__logos">
+          <a class="sponsor" href="https://www.graz.at/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="assets/img/sponsor-stadt-graz.png" alt="Stadt Graz" width="443" height="200"></a>
+          <a class="sponsor" href="https://kvk-koerner.com/de/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="assets/img/sponsor-koerner.png" alt="KVK Koerner" width="480" height="72"></a>
+          <a class="sponsor" href="https://www.rinnhofer.at/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="assets/img/sponsor-rinnhofer.png" alt="Auto Rinnhofer" width="235" height="71"></a>
+          <a class="sponsor" href="https://graz.gruene.at/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="assets/img/sponsor-gruene-graz.png" alt="Die Grünen Graz" width="183" height="200"></a>
+          <a class="sponsor" href="https://www.ordination-quitt.at/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="assets/img/sponsor-quitt.png" alt="Dr.in Neshat Quitt" width="480" height="103"></a>
+          <a class="sponsor" href="https://schneid.gmbh/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="assets/img/sponsor-schneid.png" alt="Schneid GmbH" width="480" height="170"></a>
+          <a class="sponsor" href="https://www.nextliberty.com/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="assets/img/sponsor-next-liberty.png" alt="Next Liberty" width="480" height="88"></a>
+          <div class="sponsor"><img loading="lazy" src="assets/img/sponsor-raiffeisen-hks.png" alt="Raiffeisenbank Heiligenkreuz-Kirchbach-St. Georgen" width="480" height="102"></div>
+          <a class="sponsor" href="https://www.duonachtigall.at/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="assets/img/sponsor-duo-nachtigall.png" alt="Duo Nachtigall" width="286" height="181"></a>
+        </div>
+        <p class="sponsors__more">Außerdem danken wir KPÖ Graz, Gesundheitsstadtrat Robert Krotzer, Raiffeisenbank St. Peter Graz, feeling Handelsges.m.b.H, Hügelland Apotheke und Grasmug GmbH.</p>
+      </div>
+    </section>
 
+  </main>
 
-<footer style="background: #FFFFFF; border-top: 1px solid #D9E3F1">
-<div style="max-width: 1200px; margin: 0 auto; padding: 48px 32px; display: flex; flex-wrap: wrap; gap: 32px; justify-content: space-between; align-items: center">
-<div style="flex: 1 1 300px; min-width: 0; display: flex; flex-wrap: wrap; gap: 16px 22px; align-items: center">
-<img loading="lazy" src="assets/logo.png" alt="Logo: Solidarität für ME/CFS" style="width: 104px; height: auto; display: block; flex: none">
-<div>
-<p style="margin: 0 0 6px; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 17px; text-transform: uppercase">Solidarität für ME/CFS</p>
-<p style="margin: 0; font-size: 16px; color: #3D4F73; overflow-wrap: anywhere"><a href="mailto:solidaritaetfuermecfs@gmail.com">solidaritaetfuermecfs@gmail.com</a></p>
-</div>
-</div>
-<div style="display: flex; flex-wrap: wrap; gap: 12px 26px; font-size: 16px">
-<a href="https://www.instagram.com/solidaritaetfuermecfs" target="_blank" rel="noopener noreferrer">Instagram</a>
-<a href="https://www.facebook.com/share/14VWEX9NeKy/" target="_blank" rel="noopener noreferrer">Facebook</a>
-<a href="https://www.tiktok.com/@solidaritaetfuermecfs" target="_blank" rel="noopener noreferrer">TikTok</a>
-<a href="rueckschau-2026.html">Rückschau 2026</a>
-<a href="impressum.html">Impressum</a>
-<a href="datenschutz.html">Datenschutz</a>
-</div>
-</div>
-</footer>
-</div>
-
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        <img class="site-footer__logo" loading="lazy" src="assets/img/logo.png" alt="Logo: Solidarität für ME/CFS" width="1200" height="1047">
+        <div>
+          <p class="site-footer__name">Solidarität für ME/CFS</p>
+          <p class="site-footer__mail"><a href="mailto:solidaritaetfuermecfs@gmail.com">solidaritaetfuermecfs@gmail.com</a></p>
+        </div>
+      </div>
+      <nav class="site-footer__links" aria-label="Weitere Links">
+        <a href="https://www.instagram.com/solidaritaetfuermecfs" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.facebook.com/share/14VWEX9NeKy/" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://www.tiktok.com/@solidaritaetfuermecfs" target="_blank" rel="noopener noreferrer">TikTok</a>
+        <a href="https://linktr.ee/solidaritaetfuermecfs" target="_blank" rel="noopener noreferrer">Linktree</a>
+        <a href="https://solidaritaet-fuer-mecfs.myspreadshop.at/" target="_blank" rel="noopener noreferrer">Merch-Shop</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>
