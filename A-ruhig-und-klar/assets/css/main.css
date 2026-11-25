@@ -400,14 +400,8 @@ a:hover { color: var(--accent-dark); }
   line-height: 1.12;
   letter-spacing: -0.015em;
 }
-.hero__lead {
-  max-width: 620px;
-  margin: 0 0 32px;
-  font-size: 21px;
-  line-height: 1.6;
-  color: var(--muted);
-}
-.hero__copy { margin: 0 0 24px; }
+.hero__copy { margin: 0 0 16px; }
+.hero__copy:last-of-type { margin-bottom: 28px; }
 .hero .pills { margin: 0 0 32px; }
 .hero .pill { background: #FFFFFF; }
 .hero__notice,
@@ -448,10 +442,8 @@ a:hover { color: var(--accent-dark); }
 /* Was ist ME/CFS? */
 .intro__inner { display: flex; flex-wrap: wrap; gap: 64px; }
 .intro__text { flex: 999 1 560px; min-width: 0; }
-.intro__lead { margin: 0 0 20px; font-size: 21px; line-height: 1.6; }
-.intro__copy { margin: 0 0 20px; color: var(--muted); }
+.intro__copy { margin: 0 0 20px; }
 .intro__copy:last-of-type { margin-bottom: 28px; }
-.intro__copy strong { color: var(--ink); }
 .intro__source { margin: 16px 0 0; font-size: 15px; color: var(--muted); }
 .stats { display: flex; flex: 1 1 320px; flex-direction: column; gap: 16px; min-width: 0; }
 .stat { padding: 28px 32px; border-radius: 20px; background: var(--tint-strong); }
@@ -1060,7 +1052,6 @@ a:hover { color: var(--accent-dark); }
   .cards { gap: 16px; }
 
   .hero__inner { gap: 40px; padding: 32px 20px 56px; }
-  .hero__lead { font-size: 19px; }
   .facts { gap: 10px; margin-bottom: 28px; }
   .fact { padding: 12px 16px; }
   .hero .button-row { flex-direction: column; gap: 12px; }
@@ -1086,7 +1077,6 @@ a:hover { color: var(--accent-dark); }
   .explainers__more { justify-content: center; width: 100%; margin-top: 24px; font-size: 16px; }
 
   .intro__inner { gap: 40px; }
-  .intro__lead { font-size: 19px; }
   .stat { padding: 22px 24px; }
   .stat__value { font-size: 34px; }
 
