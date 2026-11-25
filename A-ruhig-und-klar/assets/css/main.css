@@ -452,6 +452,7 @@ a:hover { color: var(--accent-dark); }
 .intro__copy { margin: 0 0 20px; color: var(--muted); }
 .intro__copy:last-of-type { margin-bottom: 28px; }
 .intro__copy strong { color: var(--ink); }
+.intro__source { margin: 16px 0 0; font-size: 15px; color: var(--muted); }
 .stats { display: flex; flex: 1 1 320px; flex-direction: column; gap: 16px; min-width: 0; }
 .stat { padding: 28px 32px; border-radius: 20px; background: var(--tint-strong); }
 .stat__value {
@@ -530,12 +531,13 @@ a:hover { color: var(--accent-dark); }
   gap: 12px;
   margin-top: 20px;
 }
-.events-past-title {
+.subsection-title {
   margin: 72px 0 24px;
   font-family: var(--font-heading);
   font-size: 26px;
   font-weight: 700;
 }
+.subsection-lead { margin: -16px 0 24px; color: var(--muted); }
 
 .steps {
   display: flex;
@@ -692,10 +694,10 @@ a:hover { color: var(--accent-dark); }
 .person--compact { flex-direction: row; align-items: center; padding: 22px; }
 .person__info { min-width: 0; }
 .person__name { margin: 0; font-weight: 700; }
-.person__degree { display: block; font-size: 15px; font-weight: 400; color: var(--muted); }
+.person__degree { display: block; }
 .person__role { margin: 0; font-size: 16px; color: var(--muted); }
 
-/* Projekte */
+/* Projekte (im Abschnitt Aktionen & Projekte) */
 .projects { display: flex; flex-wrap: wrap; gap: 20px; }
 .project {
   flex: 1 1 280px;
@@ -704,6 +706,7 @@ a:hover { color: var(--accent-dark); }
   border-radius: 22px;
   background: #FFFFFF;
 }
+.projects--tint .project { background: var(--tint); }
 .project__head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
 .project .card-title { margin-top: 18px; }
 
@@ -740,6 +743,7 @@ a:hover { color: var(--accent-dark); }
   color: var(--ink);
   text-decoration: none;
 }
+.partners--tint .partner { background: var(--tint); }
 .partner__logo { display: flex; align-items: center; height: 64px; margin-bottom: 16px; }
 .partner__logo img {
   display: block;
@@ -895,24 +899,6 @@ a:hover { color: var(--accent-dark); }
 .page .small { font-size: 15px; }
 .page .note { margin-top: 40px; }
 
-.timeline {
-  margin: 0;
-  padding: 0;
-  border-top: 1px solid var(--line);
-  list-style: none;
-}
-.timeline li {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px 32px;
-  padding: 20px 0;
-  border-bottom: 1px solid var(--line);
-}
-.timeline__time { flex: 0 0 150px; font-weight: 700; color: var(--accent); }
-.timeline li > div { flex: 1 1 340px; min-width: 0; }
-.timeline h3 { margin: 0 0 4px; font-size: 20px; }
-.timeline p { margin: 0; color: var(--muted); }
-
 .story {
   margin: 0 0 28px;
   padding: clamp(24px, 4vw, 44px);
@@ -939,8 +925,45 @@ a:hover { color: var(--accent-dark); }
   background: #FFFFFF;
 }
 
-.video-single { max-width: 320px; }
-.video-single video { width: 100%; height: auto; aspect-ratio: 9 / 16; border-radius: 22px; }
+/* Rückblick: Livestream-Aufzeichnung */
+.stream {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px 32px;
+  margin: 0 0 16px;
+  padding: 36px;
+  border-radius: 24px;
+  background: var(--ink);
+  color: #FFFFFF;
+}
+.stream__play,
+.stream__play:hover {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  color: var(--accent);
+}
+.stream__play .icon { margin-left: 4px; }
+.stream__body { flex: 1 1 380px; min-width: 0; }
+.stream__label {
+  margin: 0 0 6px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--on-dark-muted);
+}
+.page .stream h2 { margin: 0 0 10px; color: #FFFFFF; font-size: clamp(24px, 3vw, 30px); }
+.page .stream p:not(.stream__label) { margin: 0 0 20px; color: var(--on-dark-muted); }
+.page .press-card__title { line-height: 1.35; }
+.page .press { margin-top: 24px; }
+.page .press-card { background: var(--tint); }
 
 .legal { max-width: 760px; }
 .page .legal h2 {
@@ -1056,7 +1079,7 @@ a:hover { color: var(--accent-dark); }
   .event__title { font-size: 21px; }
   .flyer { flex-basis: 180px; }
   .flyer--empty { display: none; }
-  .events-past-title { margin-top: 48px; }
+  .subsection-title { margin-top: 48px; }
 
   .quote { padding: 26px 24px; }
   .quote blockquote { font-size: 20px; }
@@ -1095,4 +1118,6 @@ a:hover { color: var(--accent-dark); }
   .page .page__lead { margin-bottom: 40px; font-size: 19px; }
   .page h2 { margin-top: 48px; }
   .story blockquote { font-size: 22px; }
+  .stream { padding: 26px 22px; }
+  .stream__play { width: 72px; height: 72px; }
 }

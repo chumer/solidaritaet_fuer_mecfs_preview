@@ -12,11 +12,12 @@ betroffene.html        Berichte von Betroffenen
 impressum.html         Impressum
 datenschutz.html       Datenschutzerklärung
 favicon.ico
+CNAME                  eigene Domain für GitHub Pages (nicht löschen)
 assets/
   css/main.css         gesamtes Styling (Farben, Schriften, Bausteine, Mobil-Regeln)
   js/main.js           Menü-Knopf für Handy und Tablet (einziges Skript)
   fonts/               Montserrat + Atkinson Hyperlegible, lokal (SIL Open Font License)
-  img/                 Logos, Flyer, QR-Code
+  img/                 Logos, Flyer, QR-Code, og-image.jpg (Vorschaubild beim Teilen, 1200 × 630)
   video/               Videos + Vorschaubilder
 ```
 
@@ -45,5 +46,10 @@ Ab 960 px Breite abwärts wird die Navigation zum Menü-Knopf, ab 720 px greift 
 ## Veröffentlichen mit GitHub Pages
 
 Inhalt dieses Ordners ins Repository legen → Settings → Pages → Branch `main`, Ordner `/ (root)`.
-Für die eigene Domain eine Datei `CNAME` mit `solidaritaetfuermecfs.com` anlegen und beim
-Domain-Anbieter auf GitHub Pages zeigen lassen.
+Die Datei `CNAME` (Inhalt: `solidaritaetfuermecfs.com`) muss im Repository bleiben, sonst
+verliert GitHub Pages die eigene Domain.
+
+**Vorschaubild beim Teilen:** `og:image` zeigt mit fester Adresse auf
+`https://solidaritaetfuermecfs.com/assets/img/og-image.jpg`. Messenger brauchen eine vollständige
+Adresse; das Bild funktioniert daher erst, wenn diese Version unter der Domain online ist.
+Nach dem Veröffentlichen kann man die Vorschau z. B. mit dem Facebook Sharing Debugger neu laden.
